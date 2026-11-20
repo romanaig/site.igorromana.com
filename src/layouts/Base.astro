@@ -87,6 +87,6 @@ const token = site.analytics.cloudflare_token;
     vids.forEach((v) => io.observe(v));
   } else vids.forEach(load);
 </script>
-{token && <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token })}></script>}
+{token && <script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token })}></script>}
 </body>
 </html>
