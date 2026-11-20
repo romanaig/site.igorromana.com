@@ -1,0 +1,67 @@
+---
+// About (prancha "About — desktop/mobile" do canvas).
+import Base from '../../layouts/Base.astro';
+import TopBar from '../TopBar.astro';
+import Footer from '../Footer.astro';
+import '../../styles/about.css';
+import decor from '../../data/decor-about.json';
+import { getSite, t, paths, quoteHref, paragraphs, type Lang } from '../../lib/site';
+
+interface Props { lang: Lang; alternate?: string }
+const { lang, alternate } = Astro.props;
+const site = await getSite();
+const a = site.sobre;
+const quote = quoteHref(site, lang);
+const linhas = (s: string) => s.split('\n');
+const disponivel = t(site.disponibilidade, lang).replace(/ · /g, ' · ');
+const titulo = `${t(a.titulo, lang)} | ${site.nome} — ${t(site.titulo, lang)}`;
+const descricao = `${t(a.lead, lang)} ${paragraphs(t(a.texto, lang))[0]}`.slice(0, 160).replace(/\s+\S*$/, '…');
+---
+<Base lang={lang} title={titulo} description={descricao} path={paths.about(lang)} alternate={alternate} og={a.fotos[0].src}>
+<div class="pg">
+<TopBar lang={lang} atual="about" alternate={alternate} />
+<main>
+<section class="wrap ab-hero" aria-labelledby="ab-h">
+<Fragment set:html={decor.hero} />
+<h1 class="t ab-title" id="ab-h"><span class="hv hv-t k5">{t(a.titulo, lang)}</span></h1>
+<div class="ab-col">
+{a.fotos.map((f) => <div class={`piece ${f.classe} bwh`}><span class={`cut ${f.mascara}`}><img src={f.src} alt={t(f.alt, lang)}><span class="ht"></span></span></div>)}
+<Fragment set:html={decor.col} />
+</div>
+<div class="ab-txt">
+<p class="ab-lead"><span class="hv hv-t k1">{t(a.lead, lang)}</span></p>
+{paragraphs(t(a.texto, lang)).map((p) => <p>{p}</p>)}
+<div class="ab-cv"><a class="btn k3" href={site.cv.en} download="igor-romana-cv-en.pdf">{t(a.cv_rotulo.en, lang)}</a><a class="btn k5" href={site.cv.pt} download="igor-romana-cv-pt.pdf">{t(a.cv_rotulo.pt, lang)}</a></div>
+</div>
+</section>
+
+<section class="wrap sec" aria-labelledby="tl-h">
+<Fragment set:html={decor.tl} />
+<h2 class="t h2" id="tl-h"><span class="hv hv-t k2">{t(a.trajetoria_titulo, lang)}</span></h2>
+<ol class="tl">{a.trajetoria.map((i) => <li class={`hv k${i.cor}`}><span class="when">{t(i.quando, lang)}</span><span class="role">{t(i.papel, lang)}</span><span class="what">{t(i.onde, lang)}<span class="sub">{t(i.detalhe, lang)}</span></span></li>)}</ol>
+<h3 class="t" style="font-size:40px;line-height:1;margin-top:72px"><span class="hv hv-t k4">{t(a.formacao_titulo, lang)}</span></h3>
+<ol class="tl">{a.formacao.map((i) => <li class={`hv k${i.cor}`}><span class="when">{t(i.quando, lang)}</span><span class="role">{t(i.papel, lang)}</span><span class="what">{t(i.onde, lang)}<span class="sub">{t(i.detalhe, lang)}</span></span></li>)}</ol>
+</section>
+
+<section class="aisec" aria-labelledby="ai-h" style={decor.ai_style}><div class="aibg" aria-hidden="true"></div><div class="wrap">
+<Fragment set:html={decor.ai} />
+<div class="ai"><h2 class="t h2" id="ai-h"><span class="hv hv-t k3">{t(a.ia_titulo, lang)}</span></h2>
+<p class="box">{paragraphs(t(a.ia, lang)).map((p, i) => <Fragment>{i > 0 && <Fragment><br /><br /></Fragment>}{p}</Fragment>)}</p></div>
+</div></section>
+
+<section class="art toner" aria-labelledby="art-h">
+<Fragment set:html={decor.art} />
+<div class="head"><h2 class="t h2" id="art-h" style="font-size:clamp(64px,8vw,120px);line-height:.95"><span class="hv hv-t k3">{linhas(t(a.arte_titulo, lang)).map((s, i) => <Fragment>{i > 0 && <br />}{s}</Fragment>)}</span></h2>
+<p class="ig"><span>{t(a.arte_texto, lang)}</span><a class="btn k4" href={a.arte_botao.url}>{t(a.arte_botao.rotulo, lang)}{' ↗'}</a></p></div>
+<figure class="full"><figcaption class="wn">{t(a.arte_obra.legenda, lang)}</figcaption><img src={a.arte_obra.src} alt={t(a.arte_obra.alt, lang)} loading="lazy"></figure>
+</section>
+
+<section class="wrap sec contact" aria-labelledby="ct-h">
+<Fragment set:html={decor.contact} />
+<h2 class="t big" id="ct-h"><span class="hv hv-t k2">{linhas(t(site.cta.chamada_home, lang)).map((s, i) => <Fragment>{i > 0 && <br />}{s}</Fragment>)}</span></h2>
+<div class="row"><span class="circ"><a class="btn k3" href={quote}>{t(site.cta.rotulo, lang)}</a></span><span class="tag hv k1">{disponivel}</span><span class="tag">{t(a.contato_extra, lang)}</span></div>
+</section>
+</main>
+<Footer lang={lang} decor={decor.footer} />
+</div>
+</Base>

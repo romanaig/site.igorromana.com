@@ -13,7 +13,8 @@
   "etiqueta": "Pitch · unaired",
   "id": "case-pova-manifesto",
   "case_id": "pova-manifesto",
-  "links": []
+  "links": [],
+  "ordem": 1
  },
  {
   "titulo": {
@@ -29,7 +30,8 @@
   "etiqueta": "Aired",
   "id": "case-social-medias",
   "case_id": "social-medias",
-  "links": []
+  "links": [],
+  "ordem": 2
  },
  {
   "titulo": {
@@ -49,7 +51,8 @@
     "url": "https://www.youtube.com/watch?v=NRz-7lIIYoc",
     "rotulo": "YouTube"
    }
-  ]
+  ],
+  "ordem": 3
  },
  {
   "titulo": {
@@ -69,7 +72,8 @@
     "url": "https://www.youtube.com/watch?v=Zt-Ir2KMSH8",
     "rotulo": "YouTube"
    }
-  ]
+  ],
+  "ordem": 4
  },
  {
   "titulo": {
@@ -89,7 +93,8 @@
     "url": "https://www.behance.net/gallery/258066515/Terror-Noturno",
     "rotulo": "Behance"
    }
-  ]
+  ],
+  "ordem": 5
  },
  {
   "titulo": {
@@ -113,7 +118,8 @@
     "url": "https://www.behance.net/gallery/258066521/Lista-Preta-Video-YT-Pack",
     "rotulo": "Behance"
    }
-  ]
+  ],
+  "ordem": 6
  },
  {
   "titulo": {
@@ -133,7 +139,8 @@
     "url": "https://vimeo.com/1248435706",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 7
  },
  {
   "titulo": {
@@ -153,7 +160,8 @@
     "url": "https://www.youtube.com/watch?v=vdlu7h8qAmc",
     "rotulo": "YouTube"
    }
-  ]
+  ],
+  "ordem": 8
  },
  {
   "titulo": {
@@ -173,7 +181,8 @@
     "url": "https://youtu.be/9BqBNxHINH0",
     "rotulo": "YouTube"
    }
-  ]
+  ],
+  "ordem": 9
  },
  {
   "titulo": {
@@ -189,7 +198,8 @@
   "etiqueta": "Aired",
   "id": "case-desenrola",
   "case_id": "desenrola",
-  "links": []
+  "links": [],
+  "ordem": 10
  },
  {
   "titulo": {
@@ -209,7 +219,8 @@
     "url": "https://www.behance.net/gallery/258066427/OneOnco-2023-Video-Abertura-Evento",
     "rotulo": "Behance"
    }
-  ]
+  ],
+  "ordem": 11
  },
  {
   "titulo": {
@@ -229,7 +240,8 @@
     "url": "https://www.behance.net/gallery/258066525/Jingle-MSD-50-anos-de-programa-nacional-de-imunizacao",
     "rotulo": "Behance"
    }
-  ]
+  ],
+  "ordem": 12
  },
  {
   "titulo": {
@@ -245,7 +257,8 @@
   "etiqueta": "Aired",
   "id": "case-gloob-aniversario",
   "case_id": "gloob-aniversario",
-  "links": []
+  "links": [],
+  "ordem": 13
  },
  {
   "titulo": {
@@ -261,7 +274,8 @@
   "etiqueta": "Aired",
   "id": "case-neve-banheiros",
   "case_id": "neve-banheiros",
-  "links": []
+  "links": [],
+  "ordem": 14
  },
  {
   "titulo": {
@@ -285,7 +299,8 @@
     "url": "https://vimeo.com/410380503",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 15
  },
  {
   "titulo": {
@@ -305,7 +320,8 @@
     "url": "https://vimeo.com/1248445572",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 16
  },
  {
   "titulo": {
@@ -325,7 +341,8 @@
     "url": "https://vimeo.com/1248432396",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 17
  },
  {
   "titulo": {
@@ -345,7 +362,8 @@
     "url": "https://vimeo.com/1248433074",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 18
  },
  {
   "titulo": {
@@ -365,7 +383,8 @@
     "url": "https://www.behance.net/gallery/258066473/Titulos-para-Varejo",
     "rotulo": "Behance"
    }
-  ]
+  ],
+  "ordem": 19
  },
  {
   "titulo": {
@@ -385,7 +404,8 @@
     "url": "https://vimeo.com/1248433405",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 20
  },
  {
   "titulo": {
@@ -405,7 +425,8 @@
     "url": "https://vimeo.com/1248434230",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 21
  },
  {
   "titulo": {
@@ -425,7 +446,8 @@
     "url": "https://vimeo.com/275923687",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 22
  },
  {
   "titulo": {
@@ -445,7 +467,8 @@
     "url": "https://www.behance.net/gallery/258066435/Kiabi-Campanha-Online",
     "rotulo": "Behance"
    }
-  ]
+  ],
+  "ordem": 23
  },
  {
   "titulo": {
@@ -465,7 +488,8 @@
     "url": "https://vimeo.com/295741587",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 24
  },
  {
   "titulo": {
@@ -485,7 +509,8 @@
     "url": "https://vimeo.com/349218280",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 25
  },
  {
   "titulo": {
@@ -505,7 +530,8 @@
     "url": "https://vimeo.com/275961001",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 26
  },
  {
   "titulo": {
@@ -525,7 +551,8 @@
     "url": "https://vimeo.com/346944108",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 27
  },
  {
   "titulo": {
@@ -545,7 +572,8 @@
     "url": "https://vimeo.com/263980833",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 28
  },
  {
   "titulo": {
@@ -569,7 +597,8 @@
     "url": "https://www.youtube.com/watch?v=besCBEN18WI",
     "rotulo": "YouTube"
    }
-  ]
+  ],
+  "ordem": 29
  },
  {
   "titulo": {
@@ -589,7 +618,8 @@
     "url": "https://vimeo.com/310906220",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 30
  },
  {
   "titulo": {
@@ -609,7 +639,8 @@
     "url": "https://vimeo.com/310906484",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 31
  },
  {
   "titulo": {
@@ -624,7 +655,8 @@
   },
   "etiqueta": "Aired",
   "id": "campanhas-kiabi-social",
-  "links": []
+  "links": [],
+  "ordem": 32
  },
  {
   "titulo": {
@@ -644,7 +676,8 @@
     "url": "https://vimeo.com/310906640",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 33
  },
  {
   "titulo": {
@@ -664,7 +697,8 @@
     "url": "https://vimeo.com/342161655",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 34
  },
  {
   "titulo": {
@@ -684,7 +718,8 @@
     "url": "https://vimeo.com/310906975",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 35
  },
  {
   "titulo": {
@@ -704,7 +739,8 @@
     "url": "https://vimeo.com/1248447121",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 36
  },
  {
   "titulo": {
@@ -724,7 +760,8 @@
     "url": "https://vimeo.com/1248435153",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 37
  },
  {
   "titulo": {
@@ -744,7 +781,8 @@
     "url": "https://vimeo.com/1248434717",
     "rotulo": "Vimeo"
    }
-  ]
+  ],
+  "ordem": 38
  },
  {
   "id": "manifestos-de-campanhas",
@@ -765,6 +803,7 @@
     "rotulo": "Vimeo"
    }
   ],
-  "so_mesa": true
+  "so_mesa": true,
+  "ordem": 39
  }
 ]

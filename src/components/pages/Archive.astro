@@ -1,0 +1,64 @@
+---
+// Archive (prancha "Archive — desktop/mobile"): lista por ano, cases primeiro, link em nova aba.
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import TopBar from '../TopBar.astro';
+import Footer from '../Footer.astro';
+import '../../styles/archive.css';
+import decor from '../../data/decor-archive.json';
+import { getSite, getCases, t, paths, quoteHref, type Lang } from '../../lib/site';
+
+interface Props { lang: Lang; alternate?: string }
+const { lang, alternate } = Astro.props;
+const site = await getSite();
+const ui = site.ui;
+const u = ui.arquivo;
+const cases = new Map((await getCases()).map((c) => [c.id, c]));
+const itens = (await getCollection('arquivo')).map((e) => ({ id: e.id, ...e.data })).filter((a) => !a.so_mesa).sort((x, y) => x.ordem - y.ordem);
+// anos na ordem do arquivo (do mais novo ao mais antigo), cases no topo de cada ano
+const anos: string[] = [];
+for (const a of itens) if (!anos.includes(a.ano)) anos.push(a.ano);
+const porAno = anos.map((ano) => ({ ano, itens: itens.filter((a) => a.ano === ano).sort((x, y) => Number(!!y.case_id) - Number(!!x.case_id)) }));
+const etiquetas = ['Aired', 'Pitch · unaired', 'Internal', 'Personal'];
+const quote = quoteHref(site, lang);
+const disponivel = t(site.disponibilidade, lang).replace(/ · /g, ' · ');
+const linhas = (s: string) => s.split('\n');
+---
+<Base lang={lang} title={`${t(u.titulo, lang)} | ${site.nome} — ${t(site.titulo, lang)}`} description={t(u.descricao, lang)} path={paths.archive(lang)} alternate={alternate}>
+<div class="pg">
+<TopBar lang={lang} atual="archive" alternate={alternate} />
+<main class="arq">
+<section class="wrap" aria-labelledby="arq-h">
+<Fragment set:html={decor.top} />
+<p class="crumb"><a class="hv k5" href={`${paths.home(lang)}#work`}>{t(ui.menu.work, lang)}</a> / {t(u.titulo, lang)}</p>
+<h1 class="t cs-title" id="arq-h"><span class="bar" aria-hidden="true"></span>{t(u.titulo, lang)}</h1>
+<p class="cs-lead">{t(u.lead, lang)}</p>
+<p class="legend">{etiquetas.map((e, i) => <Fragment>{i > 0 && ' '}<span class="et">{e}</span></Fragment>)}</p>
+<ol class="arq-list">
+{porAno.map((g) => (
+<li class="yr"><h2 class="t">{g.ano}</h2><ol>
+{g.itens.map((a) => {
+  const c = a.case_id ? cases.get(a.case_id) : undefined;
+  return c ? (
+<li class="it case" style={`--ink:${c.cor};--on:${c.cor_texto}`}><span class="nm"><span class="hv hv-t">{t(a.titulo, lang)}</span><span class="cs-tag">{t(u.case, lang)}</span></span><span class="cl">{a.cliente}</span><span class="ro">{t(a.papel, lang)}</span><span class="et">{a.etiqueta}</span><a class="go" href={paths.project(lang, c.slug)}>{t(ui.ver_case, lang)}{' →'}</a></li>
+  ) : (
+<li class="it"><span class="nm">{t(a.titulo, lang)}</span><span class="cl">{a.cliente}</span><span class="ro">{t(a.papel, lang)}</span><span class="et">{a.etiqueta}</span>{a.links.length
+  ? <span class="go">{a.links.map((l, i) => <Fragment>{i > 0 && ' '}<a href={l.url} target="_blank" rel="noopener">{i === 0 ? t(ui.assistir, lang) : l.rotulo}{' ↗'}</a></Fragment>)}</span>
+  : <span class="go none"></span>}</li>
+  );
+})}
+</ol></li>
+))}
+</ol>
+<p class="cap">{t(u.nota, lang)}</p>
+</section>
+
+<section class="wrap sec next" aria-labelledby="nx">
+<Fragment set:html={decor.nx} />
+<div class="ask"><h2 class="t big" id="nx"><span class="hv hv-t k1">{linhas(t(site.cta.chamada_case, lang)).map((s, i) => <Fragment>{i > 0 && <br />}{s}</Fragment>)}</span></h2>
+<div class="row"><span class="circ"><a class="btn k3" href={quote}>{t(site.cta.rotulo, lang)}</a></span><span class="tag hv k1">{disponivel}</span></div></div>
+</section>
+</main>
+<Footer lang={lang} decor={decor.footer} />
+</div>
+</Base>

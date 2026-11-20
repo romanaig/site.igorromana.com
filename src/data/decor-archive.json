@@ -1,0 +1,5 @@
+{
+ "top": "<span aria-hidden=\"true\" class=\"sc b b-circulo_b px px2\" style=\"--ink:#FCD400;right:4%;top:70px;width:280px;height:86px;transform:rotate(6deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#19D3F3;right:16%;top:300px;width:110px;height:108px\"></span>",
+ "nx": "<span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#F0387A;left:38%;top:110px;width:120px;height:118px\"></span>",
+ "footer": "<span aria-hidden=\"true\" class=\"sc b b-sublinhado_c px px1\" style=\"--ink:#1BE07D;top:-22px;left:6%;width:40%;height:44px;transform:rotate(-1deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#F0387A;right:7%;top:40px;width:64px;height:63px\"></span>"
+}

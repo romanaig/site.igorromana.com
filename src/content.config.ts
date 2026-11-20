@@ -25,7 +25,19 @@ const site = defineCollection({
     reel: z.object({ vimeo_id: z.string(), url: z.string().url(), loop: midia, poster: midia }),
     logos: z.array(z.object({ marca: z.string(), src: midia, cor: k, inclinado: z.boolean().optional() })),
     depoimentos: z.array(z.object({ texto: L, autor: z.string(), cargo: L, link: z.string().url(), cor: k, inclinado: z.boolean().optional() })),
-    sobre: L,
+    sobre: z.object({
+      titulo: L, lead: L, texto: L,
+      fotos: z.array(z.object({ src: midia, alt: L, mascara: mascara, classe: z.string() })),
+      cv_rotulo: z.object({ en: L, pt: L }),
+      trajetoria_titulo: L, formacao_titulo: L,
+      trajetoria: z.array(z.object({ quando: L, papel: L, onde: L, detalhe: Lopt, cor: k })),
+      formacao: z.array(z.object({ quando: L, papel: L, onde: L, detalhe: Lopt, cor: k })),
+      ia_titulo: L, ia: L,
+      arte_titulo: L, arte_texto: L,
+      arte_botao: z.object({ rotulo: L, url: z.string().url() }),
+      arte_obra: z.object({ src: midia, alt: L, legenda: L }),
+      contato_extra: L,
+    }),
     cv: z.object({ en: midia, pt: midia }),
     contatos: z.array(z.object({ tipo: z.string(), rotulo: z.string(), url: z.string().url(), cor: k })),
     servicos: Llist,
@@ -106,7 +118,8 @@ const arquivo = defineCollection({
     etiqueta: z.enum(['Aired', 'Pitch · unaired', 'Internal', 'Personal']),
     links: z.array(z.object({ url: z.string().url(), rotulo: z.string() })).default([]),
     case_id: z.string().optional(),
-    so_mesa: z.boolean().optional(), // só na mesa da home (ex.: os manifestos agrupados)
+    so_mesa: z.boolean().optional(),
+    ordem: z.number().int(), // ordem do canvas: anos do mais novo ao mais antigo, cases no topo // só na mesa da home (ex.: os manifestos agrupados)
   }),
 });
 
