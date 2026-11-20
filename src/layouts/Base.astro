@@ -80,7 +80,7 @@ const token = site.analytics.cloudflare_token;
   const calmo = matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (calmo) document.querySelectorAll<HTMLVideoElement>('video[autoplay]').forEach((v) => {
     v.autoplay = false; v.removeAttribute('autoplay'); v.pause();
-    if (v.src && v.poster) { v.preload = 'none'; v.removeAttribute('src'); v.load(); }
+    if (v.getAttribute('src') && v.poster) { v.dataset.src = v.getAttribute('src')!; v.preload = 'none'; v.removeAttribute('src'); v.load(); }
   });
 
   // Loops fora da primeira tela só baixam quando entram na tela (o pôster aparece antes).

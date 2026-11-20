@@ -606,6 +606,14 @@
         "en": "Play reel on Vimeo, with sound",
         "pt": ""
       },
+      "video_pausar": {
+        "en": "Pause background video",
+        "pt": ""
+      },
+      "video_tocar": {
+        "en": "Play background video",
+        "pt": ""
+      },
       "proximo_case": {
         "en": "Next case",
         "pt": ""

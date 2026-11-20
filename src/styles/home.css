@@ -217,3 +217,10 @@ body{margin:0;background:var(--papel)}
 
 /* altura da prancha desktop só no desktop (revisão 20/11, item 2) */
 @media (min-width:821px){.band{height:1337px}}
+
+/* botão de pausar o vídeo do topo (revisão 20/11, item 5; aprovado pelo Igor) */
+.hpause{position:absolute;left:48px;top:32px;z-index:3;width:44px;height:44px;padding:0;border-radius:50%;border:2px solid var(--papel);background:rgba(27,26,24,.35);color:var(--papel);display:grid;place-items:center;cursor:pointer;opacity:.75;transition:opacity .16s steps(2)}
+.hpause:hover,.hpause:focus-visible{opacity:1}
+.hpause svg{width:14px;height:14px;grid-area:1/1}
+.hpause .i-pl,.hpause.off .i-pa{display:none}.hpause.off .i-pl{display:block}
+@media (max-width:820px){.hpause{left:24px;top:16px}}
