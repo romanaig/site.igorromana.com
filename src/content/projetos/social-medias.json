@@ -4,7 +4,7 @@
   "en": "social-for-five-brands",
   "pt": "social-para-cinco-marcas"
  },
- "status": "rascunho",
+ "status": "publicado",
  "exibir_no_portfolio": true,
  "destaque": true,
  "ordem": 5,
@@ -76,7 +76,7 @@
    "pt": ""
   },
   "resultado": {
-   "en": "The Minions & Monsters campaign went 360. These five stories with Kaká and Cafu ran on Universal's social channels, while the same campaign played in cinemas and on TV.",
+   "en": "",
    "pt": ""
   }
  },
@@ -125,5 +125,215 @@
    "en": "Social at Cappuccino: a glitch teaser for Universal's Dia D, Minions & Monsters stories with Kaká, a roller-coaster spot for Blowtex.",
    "pt": ""
   }
+ },
+ "brief_linha": true,
+ "pecas": {
+  "legenda": {
+   "en": "All thirteen pieces, as they ran. Press play; sound on.",
+   "pt": ""
+  },
+  "grupos": [
+   {
+    "id": "pieces",
+    "rotulo": "b3",
+    "titulo": {
+     "en": "Minions & Monsters, 360",
+     "pt": ""
+    },
+    "texto": {
+     "en": "The Minions & Monsters campaign went 360. These five stories with Kaká and Cafu ran on Universal's social channels, while the same campaign played in cinemas and on TV.",
+     "pt": ""
+    },
+    "escuro": true,
+    "classe": "mm5",
+    "itens": [
+     {
+      "src": "/media/social-medias/pecas/sv_min_s1.mp4",
+      "poster": "/media/social-medias/pecas/sv_min_s1.webp",
+      "proporcao": "9/16",
+      "titulo": {
+       "en": "Minions & Monsters: Cafu and Kaká",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Universal · story 1 · 0:44",
+       "pt": ""
+      }
+     },
+     {
+      "src": "/media/social-medias/pecas/sv_min_s3k.mp4",
+      "poster": "/media/social-medias/pecas/sv_min_s3k.webp",
+      "proporcao": "9/16",
+      "titulo": {
+       "en": "Minions & Monsters: Kaká",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Universal · story 3 · 0:13",
+       "pt": ""
+      }
+     },
+     {
+      "src": "/media/social-medias/pecas/sv_min_s3c.mp4",
+      "poster": "/media/social-medias/pecas/sv_min_s3c.webp",
+      "proporcao": "9/16",
+      "titulo": {
+       "en": "Minions & Monsters: Cafu",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Universal · story 3 · 0:28",
+       "pt": ""
+      }
+     },
+     {
+      "src": "/media/social-medias/pecas/sv_min_s4k.mp4",
+      "poster": "/media/social-medias/pecas/sv_min_s4k.webp",
+      "proporcao": "9/16",
+      "titulo": {
+       "en": "Minions & Monsters: Kaká",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Universal · story 4 · 0:19",
+       "pt": ""
+      }
+     },
+     {
+      "src": "/media/social-medias/pecas/sv_min_s4c.mp4",
+      "poster": "/media/social-medias/pecas/sv_min_s4c.webp",
+      "proporcao": "9/16",
+      "titulo": {
+       "en": "Minions & Monsters: Cafu",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Universal · story 4 · 0:24",
+       "pt": ""
+      }
+     }
+    ]
+   },
+   {
+    "id": "",
+    "rotulo": "b4",
+    "titulo": {
+     "en": "More from the feed",
+     "pt": ""
+    },
+    "texto": {
+     "en": "",
+     "pt": ""
+    },
+    "escuro": false,
+    "classe": "",
+    "itens": [
+     {
+      "src": "/media/social-medias/pecas/sv_diad_feed.mp4",
+      "poster": "/media/social-medias/pecas/sv_diad_feed.webp",
+      "proporcao": "4/5",
+      "titulo": {
+       "en": "Dia D: the coordinates teaser",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Universal · feed · 0:21",
+       "pt": ""
+      }
+     },
+     {
+      "src": "/media/social-medias/pecas/sv_diad_filme.mp4",
+      "poster": "/media/social-medias/pecas/sv_diad_filme.webp",
+      "proporcao": "9/16",
+      "titulo": {
+       "en": "Dia D: number one film of the weekend",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Universal · stories · 0:06",
+       "pt": ""
+      }
+     },
+     {
+      "src": "/media/social-medias/pecas/sv_diad_review.mp4",
+      "poster": "/media/social-medias/pecas/sv_diad_review.webp",
+      "proporcao": "9/16",
+      "titulo": {
+       "en": "Dia D: the Omelete review",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Universal · stories · 0:06",
+       "pt": ""
+      }
+     },
+     {
+      "src": "/media/social-medias/pecas/sv_blow_orgasmo.mp4",
+      "poster": "/media/social-medias/pecas/sv_blow_orgasmo.webp",
+      "proporcao": "9/16",
+      "titulo": {
+       "en": "Orgasm Day: the roller coaster",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Blowtex · stories · 0:11",
+       "pt": ""
+      }
+     },
+     {
+      "src": "/media/social-medias/pecas/sv_blow_hot.mp4",
+      "poster": "/media/social-medias/pecas/sv_blow_hot.webp",
+      "proporcao": "1/1",
+      "titulo": {
+       "en": "Blowtex Hot",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Blowtex · feed · 0:11",
+       "pt": ""
+      }
+     },
+     {
+      "src": "/media/social-medias/pecas/sv_blow_tiktok.mp4",
+      "poster": "/media/social-medias/pecas/sv_blow_tiktok.webp",
+      "proporcao": "9/16",
+      "titulo": {
+       "en": "Forget the rush",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Blowtex · TikTok · 0:12",
+       "pt": ""
+      }
+     },
+     {
+      "src": "/media/social-medias/pecas/sv_hits.mp4",
+      "poster": "/media/social-medias/pecas/sv_hits.webp",
+      "proporcao": "9/16",
+      "titulo": {
+       "en": "Colors that meet looks",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Hits · TikTok · 0:29",
+       "pt": ""
+      }
+     },
+     {
+      "src": "/media/social-medias/pecas/sv_novela.mp4",
+      "poster": "/media/social-medias/pecas/sv_novela.webp",
+      "proporcao": "3/5",
+      "titulo": {
+       "en": "Entre Patas e Lambeijos, a pet novela",
+       "pt": ""
+      },
+      "legenda": {
+       "en": "Ração Max · feed · 1:02",
+       "pt": ""
+      }
+     }
+    ]
+   }
+  ]
  }
 }

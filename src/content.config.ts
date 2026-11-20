@@ -72,7 +72,7 @@ const projetos = defineCollection({
     nome_card: L,
     resumo: L,
     papel: L, duracao: Lopt,
-    blocos: z.object({ desafio: L, processo: L, resultado: L }),
+    blocos: z.object({ desafio: L, processo: L, resultado: Lopt }),
     card: z.object({ mascara: z.enum(['m-h', 'm-v', 'm-d', 'm-c', 'm-t']), classe: z.string(), posicao: z.string().default('center') }),
     loop: z.object({ src: midia, poster: midia.optional(), mascara: mascara, alt: L }),
     filme: z.object({ provider: z.enum(['youtube', 'vimeo', 'ancora']), url: z.string(), id: z.string().optional(), rotulo: L }).optional(),
@@ -80,6 +80,15 @@ const projetos = defineCollection({
     processo: z.array(figura).default([]),
     resultado: z.array(figura).default([]),
     resultado_legenda: Lopt.optional(),
+    brief_linha: z.boolean().default(false), // linha horizontal no fim do Brief (Social)
+    // vídeos com play manual (Social): grupos com título, texto e peças no formato original
+    pecas: z.object({
+      legenda: Lopt,
+      grupos: z.array(z.object({
+        id: z.string().default(''), rotulo: z.string(), titulo: L, texto: Lopt, escuro: z.boolean(), classe: z.string().default(''),
+        itens: z.array(z.object({ src: midia, poster: midia, proporcao: z.string(), titulo: L, legenda: L })),
+      })),
+    }).optional(),
     mix: z.boolean().default(false),   // no celular, imagens entre os parágrafos (só Neve)
     proximo_mascara: mascara,          // recorte do vídeo do próximo case
     decor: z.record(z.string(), z.string()).default({}),
