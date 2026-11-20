@@ -4,7 +4,7 @@
   "en": "pova-manifesto",
   "pt": "pova-manifesto"
  },
- "status": "rascunho",
+ "status": "publicado",
  "exibir_no_portfolio": true,
  "destaque": true,
  "ordem": 3,
@@ -106,7 +106,7 @@
  "proximo_mascara": "r-vertical_v2",
  "processo": [
   {
-   "src": "/media/FALTA/1936475dafba28224aca22814c144869",
+   "src": "/media/pova-manifesto/04.webp",
    "alt": {
     "en": "Giant yellow type reading PAÍS SE UNIR over a boy dancing in a street",
     "pt": ""
@@ -118,7 +118,7 @@
    }
   },
   {
-   "src": "/media/FALTA/3d8c718fdadb07806f82b3812108b237",
+   "src": "/media/pova-manifesto/11.webp",
    "alt": {
     "en": "Two young men dancing on a viaduct railing above a downtown avenue",
     "pt": ""
@@ -130,7 +130,7 @@
    }
   },
   {
-   "src": "/media/FALTA/2cc2216335f5c4fbc8b41780bd910cf0",
+   "src": "/media/pova-manifesto/25.webp",
    "alt": {
     "en": "A phone skimming the rings of a planet in space",
     "pt": ""
@@ -145,7 +145,7 @@
    }
   },
   {
-   "src": "/media/FALTA/3828debfb4b8d6f7f86c571c81052e80",
+   "src": "/media/pova-manifesto/54.webp",
    "alt": {
     "en": "End card: a woman holding a phone, repeated three times, beside NO PIQUE DO MEU POVA",
     "pt": ""
@@ -159,8 +159,8 @@
  ],
  "resultado": [
   {
-   "src": "/media/FALTA/00c73624bfd76f5ff232d73f9d1582e3",
-   "poster": "/media/FALTA/364a4508e6d1bac43dced5496c52221f",
+   "src": "/media/pova-manifesto/loop.mp4",
+   "poster": "/media/pova-manifesto/loop.webp",
    "alt": {
     "en": "Loop: a selfie on the street, then the phone in hand with a map open",
     "pt": ""
@@ -170,7 +170,7 @@
    "pb": true
   },
   {
-   "src": "/media/FALTA/f52f5f46e1481d4ecdaeacce8666db62",
+   "src": "/media/pova-manifesto/36_fans.webp",
    "alt": {
     "en": "Fans in Brazil shirts cheering together in a crowd",
     "pt": ""
@@ -179,7 +179,7 @@
    "mascara": "r-horizontal"
   },
   {
-   "src": "/media/FALTA/2cc2216335f5c4fbc8b41780bd910cf0",
+   "src": "/media/pova-manifesto/25.webp",
    "alt": {
     "en": "A phone skimming the rings of a planet in space",
     "pt": ""
@@ -188,7 +188,7 @@
    "mascara": "r-tira-diagonal"
   },
   {
-   "src": "/media/FALTA/3828debfb4b8d6f7f86c571c81052e80",
+   "src": "/media/pova-manifesto/54.webp",
    "alt": {
     "en": "End card: a woman holding a phone, repeated three times, beside NO PIQUE DO MEU POVA",
     "pt": ""
@@ -218,7 +218,7 @@
   }
  },
  "brief_img": {
-  "src": "/media/FALTA/f38104c73bbfb0204078d68c7120f945",
+  "src": "/media/pova-manifesto/28_phone.webp",
   "alt": {
    "en": "A fan in a Brazil shirt grins at a POVA phone held sideways",
    "pt": ""

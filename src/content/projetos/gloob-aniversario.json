@@ -4,7 +4,7 @@
   "en": "gloob-new-year",
   "pt": "gloob-ano-novo"
  },
- "status": "rascunho",
+ "status": "publicado",
  "exibir_no_portfolio": true,
  "destaque": true,
  "ordem": 4,
@@ -107,7 +107,7 @@
  "proximo_mascara": "r-diagonal",
  "processo": [
   {
-   "src": "/media/FALTA/12cdacb1ca815550973ff8d74fe81141",
+   "src": "/media/gloob-aniversario/gloob_05.webp",
    "alt": {
     "en": "A boy with star eyes holds a magic lamp as a cut-out genie rises in a spiral",
     "pt": ""
@@ -119,7 +119,7 @@
    }
   },
   {
-   "src": "/media/FALTA/d9518155c7cb6c96e74c4c80eeb374b6",
+   "src": "/media/gloob-aniversario/gloob_08.webp",
    "alt": {
     "en": "A girl in a pink helmet rides a bike across a small planet in deep blue space",
     "pt": ""
@@ -131,7 +131,7 @@
    }
   },
   {
-   "src": "/media/FALTA/a4d366970ca8b286b0edb6740a8a0311",
+   "src": "/media/gloob-aniversario/gloob_01.webp",
    "alt": {
     "en": "Photo collage of a kid as an astronaut, a hand passing a giant fry, on purple starry paper",
     "pt": ""
@@ -143,7 +143,7 @@
    }
   },
   {
-   "src": "/media/FALTA/cfe687a3bbb88cd53e5fae255e8da436",
+   "src": "/media/gloob-aniversario/gloob_10.webp",
    "alt": {
     "en": "A kid's head on a paper robot in giant sneakers, striding through a green paper city",
     "pt": ""
@@ -157,8 +157,8 @@
  ],
  "resultado": [
   {
-   "src": "/media/FALTA/f77e7f7e28439a875cd5c0545dfd4221",
-   "poster": "/media/FALTA/56d650a7626601db029e2417149d00be",
+   "src": "/media/gloob-aniversario/gloob_06.mp4",
+   "poster": "/media/gloob-aniversario/gloob_06.webp",
    "alt": {
     "en": "Animated loop: a smiling boy with star-shaped eyes",
     "pt": ""
@@ -168,8 +168,8 @@
    "pb": true
   },
   {
-   "src": "/media/FALTA/baff13b5d72655e67c7ac71568becc91",
-   "poster": "/media/FALTA/cf7bee74bc258b4a9be1a99aa4ed2811",
+   "src": "/media/gloob-aniversario/gloob_03.mp4",
+   "poster": "/media/gloob-aniversario/gloob_03.webp",
    "alt": {
     "en": "Animated loop: a girl in a photo frame on top of a layered cake",
     "pt": ""
@@ -179,7 +179,7 @@
    "pb": true
   },
   {
-   "src": "/media/FALTA/e929446327930be9b3b8d3b23c14814c",
+   "src": "/media/gloob-aniversario/gloob_09.webp",
    "alt": {
     "en": "A kid waves from a treehouse above a skyline of Christ the Redeemer, Eiffel Tower and Empire State",
     "pt": ""
@@ -188,7 +188,7 @@
    "mascara": "r-diagonal"
   },
   {
-   "src": "/media/FALTA/cfe687a3bbb88cd53e5fae255e8da436",
+   "src": "/media/gloob-aniversario/gloob_10.webp",
    "alt": {
     "en": "A kid's head on a paper robot in giant sneakers, striding through a green paper city",
     "pt": ""
@@ -219,7 +219,7 @@
  },
  "logo": "/media/logos/gloob.png",
  "brief_img": {
-  "src": "/media/FALTA/838ccdf3d57025f2e2c559004f45b18e",
+  "src": "/media/gloob-aniversario/gloob_04.webp",
   "alt": {
    "en": "Two boys bump fists with long knitted-texture arms over a red, purple and yellow starburst",
    "pt": ""
