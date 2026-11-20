@@ -86,13 +86,13 @@
   "posicao": "center"
  },
  "loop": {
-  "src": "/media/pova-manifesto/loop.mp4",
+  "src": "/media/pova-manifesto/hero.mp4",
   "alt": {
    "en": "Loop from the manifesto: stock footage graded and layered with tech effects",
    "pt": ""
   },
   "mascara": "r-pedaco",
-  "poster": "/media/pova-manifesto/loop.webp"
+  "poster": "/media/pova-manifesto/hero.webp"
  },
  "filme": {
   "provider": "vimeo",
