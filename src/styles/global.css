@@ -1,0 +1,4 @@
+/* Regras comuns a todas as páginas (revisão 20/11). */
+/* Foco visível sobre fundo escuro também em botões e vídeos (recortes da mesa, faixa Minions). */
+.pg .toner button:focus-visible{outline-color:var(--papel)}
+.pg .toner video:focus-visible{outline:2px solid var(--papel);outline-offset:3px}

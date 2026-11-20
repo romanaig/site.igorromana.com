@@ -43,7 +43,7 @@ const descricao = `${t(a.lead, lang)} ${paragraphs(t(a.texto, lang))[0]}`.slice(
 <ol class="tl">{a.formacao.map((i) => <li class={`hv k${i.cor}`}><span class="when">{t(i.quando, lang)}</span><span class="role">{t(i.papel, lang)}</span><span class="what">{t(i.onde, lang)}<span class="sub">{t(i.detalhe, lang)}</span></span></li>)}</ol>
 </section>
 
-<section class="aisec" aria-labelledby="ai-h" style={decor.ai_style}><div class="aibg" aria-hidden="true"></div><div class="wrap">
+<section class="aisec" aria-labelledby="ai-h"><div class="aibg" aria-hidden="true"></div><div class="wrap">
 <Fragment set:html={decor.ai} />
 <div class="ai"><h2 class="t h2" id="ai-h"><span class="hv hv-t k3">{t(a.ia_titulo, lang)}</span></h2>
 <p class="box">{paragraphs(t(a.ia, lang)).map((p, i) => <Fragment>{i > 0 && <Fragment><br /><br /></Fragment>}{p}</Fragment>)}</p></div>

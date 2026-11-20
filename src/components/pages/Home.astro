@@ -5,7 +5,7 @@ import Base from '../../layouts/Base.astro';
 import Footer from '../Footer.astro';
 import '../../styles/home.css';
 import decor from '../../data/decor-home.json';
-import { getSite, getAllCases, t, paths, quoteHref, type Lang } from '../../lib/site';
+import { getSite, getAllCases, t, paths, quoteHref, linkAria, type Lang } from '../../lib/site';
 
 interface Props { lang: Lang; alternate?: string }
 const { lang, alternate } = Astro.props;
@@ -22,6 +22,7 @@ const palavras = site.nome.split(' ');
 let i = 0;
 const fotoClasse: Record<string, string> = { 'neve-banheiros': 'p-neve', desenrola: 'p-desenrola', 'pova-manifesto': 'p-pova', 'gloob-aniversario': 'p-gloob', 'social-medias': 'p-social' };
 const popId = (id: string) => `mp-${id}`;
+const rotuloLink = linkAria(ui, lang);
 const assistir = (rotulo: string, primeiro: boolean) => (primeiro ? `${t(ui.assistir, lang)} on ${rotulo}` : rotulo);
 const jsonld = [{
   '@context': 'https://schema.org', '@type': 'Person', name: site.nome, url: site.url,
@@ -32,7 +33,7 @@ const jsonld = [{
   sameAs: site.contatos.map((c) => c.url),
 }];
 ---
-<Base lang={lang} title={t(site.seo.titulo, lang)} description={t(site.seo.descricao, lang)} path={paths.home(lang)} alternate={alternate} jsonld={jsonld}>
+<Base lang={lang} title={t(site.seo.titulo, lang)} description={t(site.seo.descricao, lang)} path={paths.home(lang)} alternate={alternate} jsonld={jsonld} player={t(ui.reel, lang)}>
 <div class="pg">
 
 <header class="hero toner">
@@ -67,7 +68,7 @@ const jsonld = [{
 </div>
 </section>
 
-<section class="band toner" aria-label={t(ui.mesa_rotulo, lang)} style={decor.band_style}>
+<section class="band toner" aria-label={t(ui.mesa_rotulo, lang)}>
 <Fragment set:html={decor.band} />
 <p class="t lead"><span class="hv hv-t k3">{t(site.frase, lang)}</span></p>
 <p class="tag hint">{t(ui.mesa_dica, lang)}</p>
@@ -76,12 +77,12 @@ const jsonld = [{
 <button class="rc" popovertarget={popId(m.trabalho)} style={`--x:${m.x};--y:${m.y};--w:${m.w};--rt:${m.rt};z-index:${m.z}`} aria-label={`${t(a.titulo, lang)}, ${a.ano}. Details`}><span class={`cut ${m.mascara}`}>{m.imagem ? <span class={`sp ${m.imagem}`}></span> : <span class="sp" style={`background-position:${m.sprite}`}></span>}<span class="ht"></span></span></button>
 ); })}
 {naMesa.map((id) => { const a = arquivo.get(id)!; return (
-<div class="pop" id={popId(id)} popover="auto"><p class="pt">{t(a.titulo, lang)}</p><p class="pm">{a.ano} · {a.cliente}</p><p class="pr">{t(a.papel, lang)} <span class="et">{a.etiqueta}</span></p>{a.links.map((l, li) => <Fragment>{li > 0 && ' '}<a class="btn k3" href={l.url} target="_blank" rel="noopener">{assistir(l.rotulo, li === 0)}{' ↗'}</a></Fragment>)}<button class="x" popovertarget={popId(id)} popovertargetaction="hide" aria-label={t(ui.fechar, lang)}>×</button></div>
+<div class="pop" id={popId(id)} popover="auto"><p class="pt">{t(a.titulo, lang)}</p><p class="pm">{a.ano} · {a.cliente}</p><p class="pr">{t(a.papel, lang)} <span class="et">{a.etiqueta}</span></p>{a.links.map((l, li) => <Fragment>{li > 0 && ' '}<a class="btn k3" href={l.url} target="_blank" rel="noopener" aria-label={rotuloLink(a, l, li)}>{assistir(l.rotulo, li === 0)}{' ↗'}</a></Fragment>)}<button class="x" popovertarget={popId(id)} popovertargetaction="hide" aria-label={t(ui.fechar, lang)}>×</button></div>
 ); })}
 </div>
 <div class="carr3" aria-label="Work, swipe sideways"><ul>
 {carrossel.map((m) => { const a = arquivo.get(m.trabalho)!; const l = a.links[0]; return (
-<li><span class="pc"><span class="cut m-c">{m.imagem ? <span class={`sp ${m.imagem}`}></span> : <span class="sp" style={`background-position:${m.sprite}`}></span>}</span></span><p class="ct"><b>{t(a.titulo, lang)}</b> {a.ano}{l && <Fragment> · <a href={l.url} target="_blank" rel="noopener">{t(ui.assistir, lang)}{' ↗'}</a></Fragment>}</p></li>
+<li><span class="pc"><span class="cut m-c">{m.imagem ? <span class={`sp ${m.imagem}`}></span> : <span class="sp" style={`background-position:${m.sprite}`}></span>}</span></span><p class="ct"><b>{t(a.titulo, lang)}</b> {a.ano}{l && <Fragment> · <a href={l.url} target="_blank" rel="noopener" aria-label={rotuloLink(a, l, 0)}>{t(ui.assistir, lang)}{' ↗'}</a></Fragment>}</p></li>
 ); })}
 </ul></div>
 <p class="seeall3"><a class="hv k3" href={paths.archive(lang)}>{t(ui.ver_arquivo, lang)} →</a></p>
@@ -98,7 +99,7 @@ const jsonld = [{
 <h2 class="t h2" id="quotes-h"><span class="hv hv-t k3">{t(ui.depoimentos_titulo, lang)}</span></h2>
 <div class="quotes">
 {site.depoimentos.map((d) => (
-<figure class={`quote hv k${d.cor}${d.inclinado ? ' tilt' : ''}`}><blockquote>“{t(d.texto, lang)}”</blockquote><figcaption><b>{d.autor}</b>{t(d.cargo, lang)} · <a href={d.link}>LinkedIn</a></figcaption></figure>
+<figure class={`quote hv k${d.cor}${d.inclinado ? ' tilt' : ''}`}><blockquote>“{t(d.texto, lang)}”</blockquote><figcaption><b>{d.autor}</b>{t(d.cargo, lang)} · <a href={d.link} aria-label={`${d.autor} — LinkedIn`}>LinkedIn</a></figcaption></figure>
 ))}
 </div>
 </section>

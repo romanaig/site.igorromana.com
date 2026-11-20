@@ -6,7 +6,7 @@ import TopBar from '../TopBar.astro';
 import Footer from '../Footer.astro';
 import '../../styles/archive.css';
 import decor from '../../data/decor-archive.json';
-import { getSite, getCases, t, paths, quoteHref, type Lang } from '../../lib/site';
+import { getSite, getCases, t, paths, quoteHref, type Lang, linkAria } from '../../lib/site';
 
 interface Props { lang: Lang; alternate?: string }
 const { lang, alternate } = Astro.props;
@@ -23,6 +23,7 @@ const etiquetas = ['Aired', 'Pitch · unaired', 'Internal', 'Personal'];
 const quote = quoteHref(site, lang);
 const disponivel = t(site.disponibilidade, lang).replace(/ · /g, ' · ');
 const linhas = (s: string) => s.split('\n');
+const rotuloLink = linkAria(site.ui, lang);
 ---
 <Base lang={lang} title={`${t(u.titulo, lang)} | ${site.nome} — ${t(site.titulo, lang)}`} description={t(u.descricao, lang)} path={paths.archive(lang)} alternate={alternate}>
 <div class="pg">
@@ -43,7 +44,7 @@ const linhas = (s: string) => s.split('\n');
 <li class="it case" style={`--ink:${c.cor};--on:${c.cor_texto}`}><span class="nm"><span class="hv hv-t">{t(a.titulo, lang)}</span><span class="cs-tag">{t(u.case, lang)}</span></span><span class="cl">{a.cliente}</span><span class="ro">{t(a.papel, lang)}</span><span class="et">{a.etiqueta}</span><a class="go" href={paths.project(lang, c.slug)}>{t(ui.ver_case, lang)}{' →'}</a></li>
   ) : (
 <li class="it"><span class="nm">{t(a.titulo, lang)}</span><span class="cl">{a.cliente}</span><span class="ro">{t(a.papel, lang)}</span><span class="et">{a.etiqueta}</span>{a.links.length
-  ? <span class="go">{a.links.map((l, i) => <Fragment>{i > 0 && ' '}<a href={l.url} target="_blank" rel="noopener">{i === 0 ? t(ui.assistir, lang) : l.rotulo}{' ↗'}</a></Fragment>)}</span>
+  ? <span class="go">{a.links.map((l, i) => <Fragment>{i > 0 && ' '}<a href={l.url} target="_blank" rel="noopener" aria-label={rotuloLink(a, l, i)}>{i === 0 ? t(ui.assistir, lang) : l.rotulo}{' ↗'}</a></Fragment>)}</span>
   : <span class="go none"></span>}</li>
   );
 })}

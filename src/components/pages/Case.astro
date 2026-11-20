@@ -28,7 +28,7 @@ const jsonld = [{
   creator: { '@type': 'Person', name: site.nome, url: site.url }, about: p.cliente,
 }];
 ---
-<Base lang={lang} title={t(p.seo.titulo, lang)} description={t(p.seo.descricao, lang)} path={path} alternate={alternate} og={p.seo.og ?? p.brief_img?.src} jsonld={jsonld}>
+<Base lang={lang} title={t(p.seo.titulo, lang)} description={t(p.seo.descricao, lang)} path={path} alternate={alternate} og={p.seo.og ?? p.brief_img?.src} jsonld={jsonld} player={filmeVimeo ? t(p.filme!.rotulo, lang) : undefined}>
 <div class="pg">
 <TopBar lang={lang} atual="work" alternate={alternate} />
 <main class="cs" style={`--case-ink:${p.cor};--case-on:${p.cor_texto};--next-ink:${prox.cor};--next-on:${prox.cor_texto}`}>
@@ -42,7 +42,7 @@ const jsonld = [{
 <div class="film">
 <div class="piece"><span class={`cut ${p.loop.mascara}`}><video src={p.loop.src} poster={p.loop.poster} muted loop autoplay playsinline preload="metadata" aria-label={t(p.loop.alt, lang)}></video></span></div>
 <Fragment set:html={d.film} />
-{p.filme && <div class="acts"><a class={`btn ${k}`} href={p.filme.url} data-vimeo={filmeVimeo}>{t(p.filme.rotulo, lang)}{' ↗'}</a></div>}
+{p.filme && <div class="acts"><a class={`btn ${k}`} href={p.filme.url} data-vimeo={filmeVimeo} {...(p.filme.provider === 'youtube' ? { target: '_blank', rel: 'noopener' } : {})}>{t(p.filme.rotulo, lang)}{' ↗'}</a></div>}
 </div>
 
 <section class="wrap" aria-label={t(ui.fatos, lang)}><dl class="ficha f2">

@@ -94,9 +94,12 @@ body{margin:0;background:var(--papel)}
 .ab-col{height:620px;margin-top:-16px}.ab-p1{width:84%;height:540px}.ab-p2{width:56%;height:300px;right:0;bottom:0}
 .ab-txt{padding-top:48px}.ab-lead{font-size:32px}
 .tl li{grid-template-columns:1fr;gap:4px;padding:16px 4px}.tl .role{font-size:26px}
-.art{padding:96px 24px}.art .head p.ig{flex-wrap:wrap;gap:24px}.art .head p.ig .btn{flex:1 1 auto;font-size:18px;white-space:normal}.art .full .wn{left:16px;top:16px;font-size:18px;padding:8px 12px}.art .full{margin:48px -24px -96px}.aisec{padding:96px 0}.works{display:flex;flex-direction:column;gap:56px;margin-top:48px}.work{margin:0!important;transform:none!important}
+.art{padding:96px 24px}.art .head p.ig{flex-wrap:wrap;gap:24px}.art .head p.ig .btn{flex:1 1 auto;font-size:18px;white-space:normal}.art .full .wn{left:10px;top:10px;font-size:13px;padding:0}.art .full{margin:48px -24px -96px}.aisec{padding:96px 0}.works{display:flex;flex-direction:column;gap:56px;margin-top:48px}.work{margin:0!important;transform:none!important}
 .ai{display:block}.ai .box{margin-top:32px;padding:24px;font-size:18px}
 .contact{display:block;padding-bottom:96px}.contact .big{font-size:22vw}
 .foot{padding:48px 24px 32px;flex-direction:column;align-items:flex-start}.foot .mail{font-size:40px;word-break:break-word}
 .sc.hide-m,.sc.px3,.sc.px4{display:none}
 }
+
+/* altura da prancha desktop só onde o texto cabe (revisão 20/11, item 1) */
+@media (min-width:1280px){.aisec{height:908px}}

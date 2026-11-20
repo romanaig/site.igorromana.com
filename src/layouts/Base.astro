@@ -7,6 +7,7 @@ import '@fontsource/courier-prime/latin-ext-400';
 import '@fontsource/courier-prime/latin-700';
 import '@fontsource/courier-prime/latin-ext-700';
 import '../styles/player.css';
+import '../styles/global.css';
 import { getSite, t, type Lang } from '../lib/site';
 
 interface Props {
@@ -17,8 +18,9 @@ interface Props {
   alternate?: string;      // caminho da mesma página no outro idioma, se existir
   og?: string;
   jsonld?: Record<string, unknown>[];
+  player?: string;         // nome do vídeo do Vimeo desta página; sem ele, a caixa do player não entra
 }
-const { lang, title, description, path, alternate, og, jsonld = [] } = Astro.props;
+const { lang, title, description, path, alternate, og, jsonld = [], player } = Astro.props;
 const site = await getSite();
 const abs = (p: string) => new URL(p, site.url).href;
 const enPath = lang === 'en' ? path : alternate;
@@ -53,10 +55,10 @@ const token = site.analytics.cloudflare_token;
 </head>
 <body>
 <slot />
-<dialog class="vplayer" aria-label={t(site.ui.reel, lang)}>
-  <div class="vplayer-box"><iframe title="Vimeo" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+{player && <dialog class="vplayer" aria-label={player}>
+  <div class="vplayer-box"><iframe title={player} allow="autoplay; fullscreen; picture-in-picture"></iframe></div>
   <button class="vplayer-x" type="button" aria-label={t(site.ui.fechar, lang)}>×</button>
-</dialog>
+</dialog>}
 <script>
   // Vimeo numa caixa sobre a página, com dnt=1 (sem cookies de rastreio). Sem JS, o link abre o Vimeo.
   const dlg = document.querySelector<HTMLDialogElement>('dialog.vplayer');
@@ -74,16 +76,24 @@ const token = site.analytics.cloudflare_token;
   dlg?.addEventListener('click', (ev) => { if (ev.target === dlg) fechar(); });
   dlg?.addEventListener('close', () => { if (frame) frame.src = 'about:blank'; });
 
-  // Loops fora da primeira tela só baixam quando chegam perto (o pôster aparece antes).
+  // Com "reduzir movimento" ligado, os loops mudos não tocam: fica o pôster (WCAG 2.2.2).
+  const calmo = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (calmo) document.querySelectorAll<HTMLVideoElement>('video[autoplay]').forEach((v) => {
+    v.autoplay = false; v.removeAttribute('autoplay'); v.pause();
+    if (v.src && v.poster) { v.preload = 'none'; v.removeAttribute('src'); v.load(); }
+  });
+
+  // Loops fora da primeira tela só baixam quando entram na tela (o pôster aparece antes).
   const vids = document.querySelectorAll<HTMLVideoElement>('video[data-src]');
   const load = (v: HTMLVideoElement) => {
     v.src = v.dataset.src!; v.removeAttribute('data-src');
-    if (v.autoplay) v.play().catch(() => {});
+    if (v.autoplay && !calmo) v.play().catch(() => {});
   };
-  if ('IntersectionObserver' in window) {
+  if (calmo) { /* nada baixa: o pôster basta */ }
+  else if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       for (const e of entries) if (e.isIntersecting) { io.unobserve(e.target); load(e.target as HTMLVideoElement); }
-    }, { rootMargin: '300px 0px' });
+    }, { rootMargin: '0px', threshold: 0.01 });
     vids.forEach((v) => io.observe(v));
   } else vids.forEach(load);
 </script>

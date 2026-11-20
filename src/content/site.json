@@ -590,6 +590,10 @@
         "en": "Watch",
         "pt": ""
       },
+      "nova_aba": {
+        "en": "opens in a new tab",
+        "pt": ""
+      },
       "fechar": {
         "en": "Close",
         "pt": ""

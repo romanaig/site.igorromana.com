@@ -62,3 +62,18 @@ export function ptCompleto(obj: unknown): boolean {
 
 /** Quebra um texto com \n\n em parágrafos e \n em linhas. */
 export const paragraphs = (s: string) => s.split(/\n{2,}/).filter(Boolean);
+
+/** Nome da plataforma a partir do link (para o aria-label dos links "Watch ↗"). */
+const plataforma = (url: string) => {
+  const h = new URL(url).hostname.replace(/^www\./, '');
+  if (h.includes('vimeo')) return 'Vimeo';
+  if (h.includes('youtu')) return 'YouTube';
+  if (h.includes('behance')) return 'Behance';
+  if (h.includes('instagram')) return 'Instagram';
+  return h;
+};
+
+/** aria-label dos links de trabalho que abrem em nova aba: "Watch <título> (Vimeo, opens in a new tab)". */
+export const linkAria = (ui: { assistir: Txt; nova_aba: Txt }, lang: Lang) =>
+  (a: { titulo: Txt }, l: { url: string; rotulo: string }, i: number) =>
+    `${i === 0 ? t(ui.assistir, lang) : l.rotulo} ${t(a.titulo, lang)} (${plataforma(l.url)}, ${t(ui.nova_aba, lang)})`;

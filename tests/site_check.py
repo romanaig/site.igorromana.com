@@ -43,7 +43,14 @@ async def main():
               h1: document.querySelectorAll('h1').length})""")
             if r.status != 200 or not head["t"] or not head["l"] or not head["c"] or head["h1"] != 1:
                 falhas.append(f"{path} {r.status} {head}")
-        rec("1. páginas com status 200, título, idioma, canonical e um h1", not falhas, "; ".join(falhas))
+        # peso real da home ao abrir numa tela grande (1920×1080): tudo o que o navegador baixou sem rolar
+        big = await b.new_page(viewport={"width": 1920, "height": 1080})
+        await big.goto(BASE + "/", wait_until="load"); await big.wait_for_timeout(1500)
+        peso = await big.evaluate("""() => performance.getEntriesByType('navigation').concat(performance.getEntriesByType('resource'))
+          .filter(e => e.name.startsWith(location.origin)).reduce((s, e) => s + (e.encodedBodySize || e.transferSize || 0), 0)""")
+        await big.close()
+        if peso > 4 * 1024 * 1024: falhas.append(f"home a 1920×1080 = {peso/1048576:.2f} MB")
+        rec("1. páginas com status 200, título, idioma, canonical e um h1; home ≤ 4 MB ao abrir", not falhas, "; ".join(falhas) or f"home {peso/1048576:.2f} MB")
 
         # 2. Nenhum link interno ou mídia quebrada
         quebrados = set()
@@ -70,7 +77,17 @@ async def main():
         aberto = await desk.evaluate("document.querySelector('dialog.vplayer').open")
         await desk.click("dialog.vplayer .vplayer-x"); await desk.wait_for_timeout(300)
         fechado = await desk.evaluate("!document.querySelector('dialog.vplayer').open && document.querySelector('dialog.vplayer iframe').src === 'about:blank'")
-        rec("3. reel abre no player com dnt=1 e fecha", bool(aberto and src and "dnt=1" in src and fechado), src or "")
+        await desk.goto(BASE + "/about/", wait_until="load")
+        sem_player = await desk.locator("dialog.vplayer").count() == 0
+        await desk.goto(BASE + "/projects/neve-bathrooms-that-change-lives/", wait_until="load")
+        yt = await desk.locator(".film .acts a").get_attribute("target")
+        calmo = await b.new_page(viewport={"width": 1440, "height": 900}, reduced_motion="reduce")
+        await calmo.goto(BASE + "/", wait_until="load"); await calmo.wait_for_timeout(800)
+        tocando = await calmo.evaluate("[...document.querySelectorAll('video')].filter(v => !v.paused).length")
+        await calmo.close()
+        rec("3. reel abre no player com dnt=1 e fecha; YouTube em nova aba; sem loop com 'reduzir movimento'",
+            bool(aberto and src and "dnt=1" in src and fechado and sem_player and yt == "_blank" and tocando == 0),
+            f"{src} | sem player no About={sem_player} | YouTube target={yt} | vídeos tocando={tocando}")
 
         # 4. Mesa: o recorte abre o cartão com título e link em nova aba
         await desk.goto(BASE + "/", wait_until="load")
@@ -92,7 +109,15 @@ async def main():
             if w > 391: largos.append(f"{path} {w}px")
         await mob.goto(BASE + "/", wait_until="load")
         carr = await mob.locator("div.carr3").is_visible(); mesa = await mob.locator("div.mesa3").is_visible()
-        rec("5. celular: sem rolagem lateral; carrossel no lugar da mesa", not largos and carr and not mesa, "; ".join(largos) + f" carrossel={carr} mesa={mesa}")
+        sobra = await mob.evaluate("""() => { const b = document.querySelector('section.band'); const bt = b.getBoundingClientRect().top;
+          const fim = Math.max(...[...b.querySelectorAll(':scope > *')].filter(e => getComputedStyle(e).position !== 'absolute' && e.offsetHeight).map(e => e.getBoundingClientRect().bottom - bt));
+          return Math.round(b.offsetHeight - fim - parseFloat(getComputedStyle(b).paddingBottom)) }""")
+        await mob.goto(BASE + "/about/", wait_until="load")
+        corte = await mob.evaluate("""() => { const s = document.querySelector('section.aisec'); const ps = s.querySelectorAll('p');
+          return Math.round(ps[ps.length - 1].getBoundingClientRect().bottom - s.getBoundingClientRect().bottom) }""")
+        rec("5. celular: sem rolagem lateral; carrossel no lugar da mesa; About e faixa da home sem corte nem sobra",
+            not largos and carr and not mesa and corte <= 0 and sobra < 40,
+            "; ".join(largos) + f" carrossel={carr} mesa={mesa} texto IA além da seção={corte}px sobra na faixa={sobra}px")
 
         await b.close()
     if errors:

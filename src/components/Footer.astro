@@ -1,5 +1,5 @@
 ---
-import { getSite, type Lang } from '../lib/site';
+import { getSite, quoteHref, type Lang } from '../lib/site';
 interface Props { lang: Lang; decor?: string; pad?: boolean }
 const { lang, decor = '', pad = false } = Astro.props;
 const site = await getSite();
@@ -8,7 +8,7 @@ const ano = new Date().getFullYear();
 <footer class="toner foot">
 <Fragment set:html={decor} />
 <div>
-<a class="mail hv hv-t k5" href={`mailto:${site.cta.mailto}`}>{site.cta.mailto}</a>
+<a class="mail hv hv-t k5" href={quoteHref(site, lang)}>{site.cta.mailto}</a>
 <ul style="margin-top:24px">
 {site.contatos.map((c) => <li><a class={`hv k${c.cor}`} style={pad ? 'padding:0 6px' : undefined} href={c.url}>{c.rotulo}</a></li>)}
 </ul>
