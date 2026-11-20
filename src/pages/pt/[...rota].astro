@@ -1,0 +1,29 @@
+---
+// Páginas em PT. Só são geradas quando todos os campos pt da página estão preenchidos
+// (regra do build, seção 5): enquanto a copy PT não chega, nada é gerado aqui.
+import { getCollection } from 'astro:content';
+import Home from '../../components/pages/Home.astro';
+import About from '../../components/pages/About.astro';
+import Archive from '../../components/pages/Archive.astro';
+import Case from '../../components/pages/Case.astro';
+import { getSite, getCases, ptCompleto, paths } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const site = await getSite();
+  const out: { params: { rota: string | undefined }; props: { tipo: string; id?: string; alternate: string } }[] = [];
+  if (!ptCompleto(site)) return out; // textos globais e de interface primeiro
+  out.push({ params: { rota: undefined }, props: { tipo: 'home', alternate: paths.home('en') } });
+  out.push({ params: { rota: 'sobre' }, props: { tipo: 'about', alternate: paths.about('en') } });
+  const arquivo = (await getCollection('arquivo')).map((e) => e.data);
+  if (ptCompleto(arquivo)) out.push({ params: { rota: 'arquivo' }, props: { tipo: 'archive', alternate: paths.archive('en') } });
+  for (const c of await getCases()) {
+    if (ptCompleto(c)) out.push({ params: { rota: `projetos/${c.slug.pt}` }, props: { tipo: 'case', id: c.id, alternate: paths.project('en', c.slug) } });
+  }
+  return out;
+}
+const { tipo, id, alternate } = Astro.props;
+---
+{tipo === 'home' && <Home lang="pt" alternate={alternate} />}
+{tipo === 'about' && <About lang="pt" alternate={alternate} />}
+{tipo === 'archive' && <Archive lang="pt" alternate={alternate} />}
+{tipo === 'case' && id && <Case lang="pt" id={id} alternate={alternate} />}

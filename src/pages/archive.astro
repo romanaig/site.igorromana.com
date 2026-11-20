@@ -1,4 +1,9 @@
 ---
+import { getCollection } from 'astro:content';
 import Archive from '../components/pages/Archive.astro';
+import { getSite, ptCompleto } from '../lib/site';
+const site = await getSite();
+const arquivo = (await getCollection('arquivo')).map((e) => e.data);
+const alternate = ptCompleto(site) && ptCompleto(arquivo) ? '/pt/arquivo/' : undefined;
 ---
-<Archive lang="en" />
+<Archive lang="en" alternate={alternate} />

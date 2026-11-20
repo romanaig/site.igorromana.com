@@ -2,6 +2,6 @@
 import About from '../components/pages/About.astro';
 import { getSite, ptCompleto } from '../lib/site';
 const site = await getSite();
-const alternate = ptCompleto(site.sobre) ? '/pt/sobre/' : undefined;
+const alternate = ptCompleto(site) ? '/pt/sobre/' : undefined;
 ---
 <About lang="en" alternate={alternate} />

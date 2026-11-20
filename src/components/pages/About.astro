@@ -17,7 +17,7 @@ const disponivel = t(site.disponibilidade, lang).replace(/ · /g, ' · ');
 const titulo = `${t(a.titulo, lang)} | ${site.nome} — ${t(site.titulo, lang)}`;
 const descricao = `${t(a.lead, lang)} ${paragraphs(t(a.texto, lang))[0]}`.slice(0, 160).replace(/\s+\S*$/, '…');
 ---
-<Base lang={lang} title={titulo} description={descricao} path={paths.about(lang)} alternate={alternate} og={a.fotos[0].src}>
+<Base lang={lang} title={titulo} description={descricao} path={paths.about(lang)} alternate={alternate} og="/media/og/about.jpg">
 <div class="pg">
 <TopBar lang={lang} atual="about" alternate={alternate} />
 <main>

@@ -68,8 +68,10 @@ const token = site.analytics.cloudflare_token;
     frame.src = `https://player.vimeo.com/video/${a.dataset.vimeo}?autoplay=1&dnt=1&title=0&byline=0&portrait=0`;
     dlg.showModal();
   });
-  dlg?.querySelector('.vplayer-x')?.addEventListener('click', () => dlg.close());
-  dlg?.addEventListener('click', (ev) => { if (ev.target === dlg) dlg.close(); });
+  // fechar também para o som: o player sai da página na hora (Esc cai no evento close)
+  const fechar = () => { if (frame) frame.src = 'about:blank'; dlg?.close(); };
+  dlg?.querySelector('.vplayer-x')?.addEventListener('click', fechar);
+  dlg?.addEventListener('click', (ev) => { if (ev.target === dlg) fechar(); });
   dlg?.addEventListener('close', () => { if (frame) frame.src = 'about:blank'; });
 
   // Loops fora da primeira tela só baixam quando chegam perto (o pôster aparece antes).
