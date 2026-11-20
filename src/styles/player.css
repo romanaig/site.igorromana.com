@@ -1,0 +1,8 @@
+/* Caixa do player do Vimeo (reel e filmes). Mesmo papel/toner do design system. */
+.vplayer{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:min(1280px,94vw);overflow:visible}
+.vplayer::backdrop{background:rgba(27,26,24,.88)}
+.vplayer-box{position:relative;aspect-ratio:16/9;background:#1B1A18;box-shadow:3px 4px 0 rgba(0,0,0,.55)}
+.vplayer-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vplayer-x{position:absolute;right:0;top:-56px;min-width:44px;min-height:44px;border:2px solid #1B1A18;background:#FBFAF7;color:#1B1A18;font:900 32px/1 'Big Shoulders Display','Arial Narrow',Impact,sans-serif;cursor:pointer}
+.vplayer-x:hover,.vplayer-x:focus-visible{background:#FCD400}
+.vplayer-x:focus-visible{outline:2px solid #FBFAF7;outline-offset:3px}

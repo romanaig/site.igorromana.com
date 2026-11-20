@@ -1,0 +1,97 @@
+---
+// Página de case (prancha "Case Neve" do canvas, molde dos outros).
+import Base from '../../layouts/Base.astro';
+import TopBar from '../TopBar.astro';
+import Footer from '../Footer.astro';
+import '../../styles/case.css';
+import { getSite, getAllCases, t, paths, quoteHref, paragraphs, type Lang } from '../../lib/site';
+
+interface Props { lang: Lang; id: string; alternate?: string }
+const { lang, id, alternate } = Astro.props;
+const site = await getSite();
+const ui = site.ui;
+const todos = await getAllCases();
+const idx = todos.findIndex((c) => c.id === id);
+const p = todos[idx];
+const prox = todos[(idx + 1) % todos.length];
+const d = p.decor;
+const quote = quoteHref(site, lang);
+const nl2br = (s: string) => s.split('\n');
+const disponivel = t(site.disponibilidade, lang).replace(/ · /g, ' · ');
+const filmeVimeo = p.filme?.provider === 'vimeo' ? p.filme.id : undefined;
+const path = paths.project(lang, p.slug);
+const jsonld = [{
+  '@context': 'https://schema.org', '@type': 'CreativeWork', name: t(p.titulo, lang), description: t(p.resumo, lang),
+  dateCreated: p.ano.slice(0, 4), url: new URL(path, site.url).href, image: p.brief_img ? new URL(p.brief_img.src, site.url).href : undefined,
+  creator: { '@type': 'Person', name: site.nome, url: site.url }, about: p.cliente,
+}];
+---
+<Base lang={lang} title={t(p.seo.titulo, lang)} description={t(p.seo.descricao, lang)} path={path} alternate={alternate} og={p.seo.og ?? p.brief_img?.src} jsonld={jsonld}>
+<div class="pg">
+<TopBar lang={lang} atual="work" alternate={alternate} />
+<main class="cs" style={`--case-ink:${p.cor};--case-on:${p.cor_texto};--next-ink:${prox.cor};--next-on:${prox.cor_texto}`}>
+<section class="wrap" aria-labelledby="cs-h">
+<Fragment set:html={d['cs-h']} />
+<p class="crumb"><a class="hv k5" href={`${paths.home(lang)}#work`}>{t(ui.menu.work, lang)}</a> / {t(p.nome_card, lang)}</p>
+<h1 class="t cs-title" id="cs-h"><span class="bar" aria-hidden="true" style={p.cor_titulo ? `background:${p.cor_titulo}` : undefined}></span>{t(p.titulo, lang)}</h1>
+<p class="cs-lead">{t(p.resumo, lang)}</p>
+</section>
+
+<div class="film">
+<div class="piece"><span class={`cut ${p.loop.mascara}`}><video src={p.loop.src} poster={p.loop.poster} muted loop autoplay playsinline preload="metadata" aria-label={t(p.loop.alt, lang)}></video></span></div>
+<Fragment set:html={d.film} />
+{p.filme && <div class="acts"><a class="btn k1" href={p.filme.url} data-vimeo={filmeVimeo}>{t(p.filme.rotulo, lang)}{' ↗'}</a></div>}
+</div>
+
+<section class="wrap" aria-label={t(ui.fatos, lang)}><dl class="ficha f2">
+<div class="cl">{p.logo && <span class="lg on"><img src={p.logo} alt={`${p.cliente} logo`}></span>}<div><dt>{t(p.ficha.cliente_rotulo, lang)}</dt><dd>{p.cliente}</dd>{t(p.ficha.cliente_sub, lang) && <span class="sub">{t(p.ficha.cliente_sub, lang)}</span>}</div></div>
+<div class="ro"><dt>{t(ui.ficha.papel, lang)}</dt><dd>{t(p.papel, lang)}</dd></div>
+<div class="tm">{p.ficha.meio.map((m) => <Fragment><dt>{t(m.rotulo, lang)}</dt><dd>{t(m.valor, lang)}</dd></Fragment>)}</div>
+<div class="yr"><dt>{t(ui.ficha.ano, lang)}</dt><dd>{p.ano}</dd>{t(p.duracao, lang) && <Fragment><dt>{t(ui.ficha.duracao, lang)}</dt><dd>{t(p.duracao, lang)}</dd></Fragment>}<dt>{t(ui.ficha.status, lang)}</dt><dd>{p.etiqueta}</dd></div>
+</dl></section>
+
+<section class={`wrap sec${p.mix ? ' mix' : ''}`} aria-labelledby="b1">
+<Fragment set:html={d.b1} />
+<div class="blk"><h2 class="t h2 lab" id="b1"><span class="hv hv-t k1">{t(ui.blocos.desafio, lang)}</span></h2>
+<div class="body">{paragraphs(t(p.blocos.desafio, lang)).map((s) => <p>{s}</p>)}</div>
+{p.brief_img && <div class="brief-img"><div class="piece"><span class={`cut ${p.brief_img.mascara ?? ''}`}><img src={p.brief_img.src} alt={t(p.brief_img.alt, lang)} loading="lazy"></span></div>
+<Fragment set:html={d['b1>brief-img']} /></div>}
+</div>
+</section>
+
+<section class={`wrap sec${p.mix ? ' mix' : ''}`} aria-labelledby="b2">
+<Fragment set:html={d.b2} />
+<div class="blk"><h2 class="t h2 lab" id="b2"><span class="hv hv-t k1">{t(ui.blocos.processo, lang)}</span></h2>
+<div class="body">{paragraphs(t(p.blocos.processo, lang)).map((s) => <p>{s}</p>)}</div></div>
+<div class="proc" style="position:relative">
+{p.processo.map((f) => (
+<figure class={`pf${f.rasgado ? ' torn' : ''} ${f.classe}`} style={f.estilo}><div class="box">{f.mascara
+  ? <span class={`cut ${f.mascara}`}>{f.src.endsWith('.mp4') ? <video data-src={f.src} poster={f.poster} muted loop autoplay playsinline preload="metadata" aria-label={t(f.alt, lang)}></video> : <img src={f.src} alt={t(f.alt, lang)} loading="lazy">}</span>
+  : (f.src.endsWith('.mp4') ? <video data-src={f.src} poster={f.poster} muted loop autoplay playsinline preload="metadata" aria-label={t(f.alt, lang)}></video> : <img src={f.src} alt={t(f.alt, lang)} loading="lazy">)}</div>{f.legenda && t(f.legenda, lang) && <figcaption><b>{t(f.legenda, lang)}</b></figcaption>}</figure>
+))}
+<Fragment set:html={d['b2>proc']} /></div>
+</section>
+
+<section class="res toner" aria-labelledby="b3">
+<Fragment set:html={d.b3} />
+<div class="wrap"><div class="blk"><h2 class="t h2 lab" id="b3"><span class="hv hv-t k1">{t(ui.blocos.resultado, lang)}</span></h2>
+<div class="body">{paragraphs(t(p.blocos.resultado, lang)).map((s) => <p>{s}</p>)}</div></div>
+<div class="stills" style="position:relative">
+{p.resultado.map((f) => (
+<div class={`st ${f.classe}`}><div class={`piece${f.pb ? ' bwh' : ''}`}><span class={`cut ${f.mascara ?? ''}`}>{f.src.endsWith('.mp4') ? <video data-src={f.src} poster={f.poster} muted loop autoplay playsinline preload="metadata" aria-label={t(f.alt, lang)}></video> : <img src={f.src} alt={t(f.alt, lang)} loading="lazy">}</span></div></div>
+))}
+<Fragment set:html={d['b3>stills']} /></div>
+{p.resultado_legenda && t(p.resultado_legenda, lang) && <p class="cap" style="margin-top:32px">{t(p.resultado_legenda, lang)}</p>}
+</div>
+</section>
+
+<section class="wrap sec next" aria-labelledby="nx">
+<Fragment set:html={d.nx} />
+<div class="ask"><h2 class="t big" id="nx"><span class="hv hv-t k1">{nl2br(t(site.cta.chamada_case, lang)).map((s, i) => <Fragment>{i > 0 && <br />}{s}</Fragment>)}</span></h2>
+<div class="row"><span class="circ"><a class="btn k3" href={quote}>{t(site.cta.rotulo, lang)}</a></span><span class="tag hv k1">{disponivel}</span></div></div>
+<a class="nc bwh" href={paths.project(lang, prox.slug)} aria-label={`${t(ui.proximo_case, lang)}: ${t(prox.nome_card, lang)}`}><span class="piece"><span class={`cut ${p.proximo_mascara}`}><video data-src={prox.loop.src} poster={prox.loop.poster} muted loop autoplay playsinline preload="none" aria-hidden="true"></video><span class="ht"></span></span></span><span class="lbl"><small>{t(ui.proximo_case, lang)}</small><b>{t(prox.nome_card, lang)}</b></span><span class="go">{t(ui.ver_case, lang)}</span></a>
+</section>
+</main>
+<Footer lang={lang} decor={d.footer} />
+</div>
+</Base>

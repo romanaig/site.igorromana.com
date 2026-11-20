@@ -1,0 +1,14 @@
+---
+import Case from '../../components/pages/Case.astro';
+import { getCases, ptCompleto } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const cases = await getCases();
+  return cases.map((p) => ({
+    params: { slug: p.slug.en },
+    props: { id: p.id, alternate: ptCompleto(p) ? `/pt/projetos/${p.slug.pt}/` : undefined },
+  }));
+}
+const { id, alternate } = Astro.props;
+---
+<Case lang="en" id={id} alternate={alternate} />

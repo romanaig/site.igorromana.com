@@ -1,0 +1,770 @@
+[
+ {
+  "titulo": {
+   "en": "POVA Manifesto",
+   "pt": ""
+  },
+  "ano": "2026",
+  "cliente": "POVA · Cappuccino",
+  "papel": {
+   "en": "Animation & edit",
+   "pt": ""
+  },
+  "etiqueta": "Pitch · unaired",
+  "id": "case-pova-manifesto",
+  "case_id": "pova-manifesto",
+  "links": []
+ },
+ {
+  "titulo": {
+   "en": "Social for five brands",
+   "pt": ""
+  },
+  "ano": "2026",
+  "cliente": "Universal · Blowtex · SKYN · Ração Max · Hits",
+  "papel": {
+   "en": "Animation & edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "case-social-medias",
+  "case_id": "social-medias",
+  "links": []
+ },
+ {
+  "titulo": {
+   "en": "Grupo Carrefour Brasil, 50 years",
+   "pt": ""
+  },
+  "ano": "2025",
+  "cliente": "Grupo Carrefour Brasil · Cappuccino",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "carrefour-50-anos",
+  "links": [
+   {
+    "url": "https://www.youtube.com/watch?v=NRz-7lIIYoc",
+    "rotulo": "YouTube"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Momento Cruzamentos podcast",
+   "pt": ""
+  },
+  "ano": "2025",
+  "cliente": "Grupo Carrefour Brasil · Cappuccino",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "carrefour-podcast-cruzamentos",
+  "links": [
+   {
+    "url": "https://www.youtube.com/watch?v=Zt-Ir2KMSH8",
+    "rotulo": "YouTube"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Terror Noturno",
+   "pt": ""
+  },
+  "ano": "2025",
+  "cliente": "Stage show",
+  "papel": {
+   "en": "Design & promo edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "terror-noturno",
+  "links": [
+   {
+    "url": "https://www.behance.net/gallery/258066515/Terror-Noturno",
+    "rotulo": "Behance"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Lista Preta channel pack",
+   "pt": ""
+  },
+  "ano": "2025",
+  "cliente": "Lista Preta",
+  "papel": {
+   "en": "Animation",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "lista-preta-video-yt-pack",
+  "links": [
+   {
+    "url": "https://www.youtube.com/watch?v=44WevMW-uwQ",
+    "rotulo": "YouTube"
+   },
+   {
+    "url": "https://www.behance.net/gallery/258066521/Lista-Preta-Video-YT-Pack",
+    "rotulo": "Behance"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Lizard Cult social videos",
+   "pt": ""
+  },
+  "ano": "2025",
+  "cliente": "Lizard Cult",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "social-lizard-cult",
+  "links": [
+   {
+    "url": "https://vimeo.com/1248435706",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "LUAPSY, Switchblade",
+   "pt": ""
+  },
+  "ano": "2024",
+  "cliente": "LUAPSY · 17zero1 & Studio 7",
+  "papel": {
+   "en": "Post & VFX",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "luapsy-switchblade",
+  "links": [
+   {
+    "url": "https://www.youtube.com/watch?v=vdlu7h8qAmc",
+    "rotulo": "YouTube"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Halloween special, short film",
+   "pt": ""
+  },
+  "ano": "2024",
+  "cliente": "With Preto Vidal (writer & actor)",
+  "papel": {
+   "en": "Direction, camera & edit",
+   "pt": ""
+  },
+  "etiqueta": "Personal",
+  "id": "halloween-special-short-film",
+  "links": [
+   {
+    "url": "https://youtu.be/9BqBNxHINH0",
+    "rotulo": "YouTube"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Desenrola aí",
+   "pt": ""
+  },
+  "ano": "2023",
+  "cliente": "Desenrola aí",
+  "papel": {
+   "en": "Art direction & animation",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "case-desenrola",
+  "case_id": "desenrola",
+  "links": []
+ },
+ {
+  "titulo": {
+   "en": "OneOnco 2023 opening film",
+   "pt": ""
+  },
+  "ano": "2023",
+  "cliente": "Janssen",
+  "papel": {
+   "en": "Animation & edit",
+   "pt": ""
+  },
+  "etiqueta": "Internal",
+  "id": "oneonco-2023-video-abertura-evento",
+  "links": [
+   {
+    "url": "https://www.behance.net/gallery/258066427/OneOnco-2023-Video-Abertura-Evento",
+    "rotulo": "Behance"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Immunization jingle, 50 years",
+   "pt": ""
+  },
+  "ano": "2023",
+  "cliente": "MSD",
+  "papel": {
+   "en": "Animation & edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "jingle-msd-50-anos",
+  "links": [
+   {
+    "url": "https://www.behance.net/gallery/258066525/Jingle-MSD-50-anos-de-programa-nacional-de-imunizacao",
+    "rotulo": "Behance"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Gloob New Year",
+   "pt": ""
+  },
+  "ano": "2021",
+  "cliente": "Gloob · Piloto TV",
+  "papel": {
+   "en": "Animation",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "case-gloob-aniversario",
+  "case_id": "gloob-aniversario",
+  "links": []
+ },
+ {
+  "titulo": {
+   "en": "Bathrooms that change lives",
+   "pt": ""
+  },
+  "ano": "2020",
+  "cliente": "Neve · PlayGround",
+  "papel": {
+   "en": "Art direction & storyboard",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "case-neve-banheiros",
+  "case_id": "neve-banheiros",
+  "links": []
+ },
+ {
+  "titulo": {
+   "en": "Mobly store films",
+   "pt": ""
+  },
+  "ano": "2020",
+  "cliente": "Mobly",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "abertura-lojas-mobly",
+  "links": [
+   {
+    "url": "https://vimeo.com/431262056",
+    "rotulo": "Vimeo"
+   },
+   {
+    "url": "https://vimeo.com/410380503",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Word Stacks game ad",
+   "pt": ""
+  },
+  "ano": "2020",
+  "cliente": "Fanatee",
+  "papel": {
+   "en": "Animation & edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "fanatee",
+  "links": [
+   {
+    "url": "https://vimeo.com/1248445572",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Effie Awards case film",
+   "pt": ""
+  },
+  "ano": "2019",
+  "cliente": "Doritos",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Internal",
+  "id": "doritos-effie-awards-2019",
+  "links": [
+   {
+    "url": "https://vimeo.com/1248432396",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Internal health news",
+   "pt": ""
+  },
+  "ano": "2019",
+  "cliente": "Fleury",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Internal",
+  "id": "fleury-endomarketing",
+  "links": [
+   {
+    "url": "https://vimeo.com/1248433074",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "3D titles for retail",
+   "pt": ""
+  },
+  "ano": "2019",
+  "cliente": "Retail",
+  "papel": {
+   "en": "3D animation",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "titulos-para-varejo",
+  "links": [
+   {
+    "url": "https://www.behance.net/gallery/258066473/Titulos-para-Varejo",
+    "rotulo": "Behance"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Satisfaction Looping",
+   "pt": ""
+  },
+  "ano": "2019",
+  "cliente": "Personal",
+  "papel": {
+   "en": "3D animation",
+   "pt": ""
+  },
+  "etiqueta": "Personal",
+  "id": "satisfaction-looping",
+  "links": [
+   {
+    "url": "https://vimeo.com/1248433405",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Tchoose shirt launch",
+   "pt": ""
+  },
+  "ano": "2019",
+  "cliente": "Tchoose",
+  "papel": {
+   "en": "Animation",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "tchoose",
+  "links": [
+   {
+    "url": "https://vimeo.com/1248434230",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Kiabi Happy Job",
+   "pt": ""
+  },
+  "ano": "2018",
+  "cliente": "Kiabi",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "kiabi-happy-job",
+  "links": [
+   {
+    "url": "https://vimeo.com/275923687",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Kiabi online launch",
+   "pt": ""
+  },
+  "ano": "2018",
+  "cliente": "Kiabi · For",
+  "papel": {
+   "en": "Animation & edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "kiabi-campanha-online",
+  "links": [
+   {
+    "url": "https://www.behance.net/gallery/258066435/Kiabi-Campanha-Online",
+    "rotulo": "Behance"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Jadlog bumper",
+   "pt": ""
+  },
+  "ano": "2018",
+  "cliente": "Jadlog",
+  "papel": {
+   "en": "Animation",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "bumper-jadlog",
+  "links": [
+   {
+    "url": "https://vimeo.com/295741587",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Kiabi first store opening",
+   "pt": ""
+  },
+  "ano": "2018",
+  "cliente": "Kiabi",
+  "papel": {
+   "en": "Direction & edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "inauguracao-kiabi",
+  "links": [
+   {
+    "url": "https://vimeo.com/349218280",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Proficiency exam film",
+   "pt": ""
+  },
+  "ano": "2018",
+  "cliente": "Aliança Francesa",
+  "papel": {
+   "en": "Art direction & illustration",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "alianca-francesa-exame-de-proficiencia",
+  "links": [
+   {
+    "url": "https://vimeo.com/275961001",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Jasmine manifesto",
+   "pt": ""
+  },
+  "ano": "2018",
+  "cliente": "Jasmine",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Pitch · unaired",
+  "id": "manifesto-jasmine",
+  "links": [
+   {
+    "url": "https://vimeo.com/346944108",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Kiabi 2018 campaign film",
+   "pt": ""
+  },
+  "ano": "2018",
+  "cliente": "Kiabi · For",
+  "papel": {
+   "en": "Animation & edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "kiabi-2018-filme-1",
+  "links": [
+   {
+    "url": "https://vimeo.com/263980833",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Escolha Segura YouTube channel",
+   "pt": ""
+  },
+  "ano": "2018",
+  "cliente": "Escolha Segura",
+  "papel": {
+   "en": "Branding, design & motion",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "escolha-segura",
+  "links": [
+   {
+    "url": "https://vimeo.com/286813282",
+    "rotulo": "Vimeo"
+   },
+   {
+    "url": "https://www.youtube.com/watch?v=besCBEN18WI",
+    "rotulo": "YouTube"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Everything DiSC manifesto",
+   "pt": ""
+  },
+  "ano": "2018",
+  "cliente": "Everything DiSC · For",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Pitch · unaired",
+  "id": "manifesto-disc",
+  "links": [
+   {
+    "url": "https://vimeo.com/310906220",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Aiknow manifesto",
+   "pt": ""
+  },
+  "ano": "2018",
+  "cliente": "Aiknow · For",
+  "papel": {
+   "en": "Design, branding & edit",
+   "pt": ""
+  },
+  "etiqueta": "Pitch · unaired",
+  "id": "manifesto-aiknow",
+  "links": [
+   {
+    "url": "https://vimeo.com/310906484",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Kiabi social ads",
+   "pt": ""
+  },
+  "ano": "2018",
+  "cliente": "Kiabi",
+  "papel": {
+   "en": "Animation & edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "campanhas-kiabi-social",
+  "links": []
+ },
+ {
+  "titulo": {
+   "en": "Le Club Accor manifesto",
+   "pt": ""
+  },
+  "ano": "2017",
+  "cliente": "Le Club Accor · For",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Pitch · unaired",
+  "id": "manifesto-accor",
+  "links": [
+   {
+    "url": "https://vimeo.com/310906640",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "April Seguros manifesto",
+   "pt": ""
+  },
+  "ano": "2017",
+  "cliente": "April Seguros · For",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Pitch · unaired",
+  "id": "manifesto-april",
+  "links": [
+   {
+    "url": "https://vimeo.com/342161655",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Guarani manifesto",
+   "pt": ""
+  },
+  "ano": "2017",
+  "cliente": "Guarani · For",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Pitch · unaired",
+  "id": "manifesto-guarani",
+  "links": [
+   {
+    "url": "https://vimeo.com/310906975",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Bari Brasil Film Fest titles",
+   "pt": ""
+  },
+  "ano": "2017",
+  "cliente": "Bari Brasil Film Fest",
+  "papel": {
+   "en": "Title animation",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "bari-brasil-film-fest",
+  "links": [
+   {
+    "url": "https://vimeo.com/1248447121",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "AXA insurance campaign",
+   "pt": ""
+  },
+  "ano": "2017",
+  "cliente": "AXA Seguros · For",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "campanha-axa",
+  "links": [
+   {
+    "url": "https://vimeo.com/1248435153",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "titulo": {
+   "en": "Cetelem campaign",
+   "pt": ""
+  },
+  "ano": "2017",
+  "cliente": "Cetelem · For",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Aired",
+  "id": "campanha-cetelem",
+  "links": [
+   {
+    "url": "https://vimeo.com/1248434717",
+    "rotulo": "Vimeo"
+   }
+  ]
+ },
+ {
+  "id": "manifestos-de-campanhas",
+  "titulo": {
+   "en": "Campaign manifestos",
+   "pt": ""
+  },
+  "ano": "2017–2019",
+  "cliente": "Various · For",
+  "papel": {
+   "en": "Edit",
+   "pt": ""
+  },
+  "etiqueta": "Pitch · unaired",
+  "links": [
+   {
+    "url": "https://vimeo.com/310906640",
+    "rotulo": "Vimeo"
+   }
+  ],
+  "so_mesa": true
+ }
+]

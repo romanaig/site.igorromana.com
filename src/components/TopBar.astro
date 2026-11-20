@@ -1,0 +1,12 @@
+---
+import { getSite, t, paths, quoteHref, type Lang } from '../lib/site';
+interface Props { lang: Lang; atual?: 'work' | 'about' | 'archive'; alternate?: string }
+const { lang, atual, alternate } = Astro.props;
+const site = await getSite();
+const ui = site.ui;
+const cur = (k: string) => (atual === k ? 'page' : undefined);
+---
+<header class="top">
+<a class="logo-n hv k4" href={paths.home(lang)}>{site.nome}</a>
+<nav class="nav" aria-label="Main"><a class="hv k5" aria-current={cur('work')} href={`${paths.home(lang)}#work`}>{t(ui.menu.work, lang)}</a><a class="hv k4" aria-current={cur('about')} href={paths.about(lang)}>{t(ui.menu.about, lang)}</a><a class="hv k2" aria-current={cur('archive')} href={paths.archive(lang)}>{t(ui.menu.archive, lang)}</a>{alternate && <a class="hv k3" href={alternate} aria-label={t(ui.trocar_idioma, lang)}>EN / PT</a>}<a class="btn k1" href={quoteHref(site, lang)}>{t(site.cta.rotulo, lang)}</a></nav>
+</header>

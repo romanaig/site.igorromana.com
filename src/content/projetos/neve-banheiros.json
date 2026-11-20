@@ -1,0 +1,289 @@
+{
+ "id": "neve-banheiros",
+ "slug": {
+  "en": "neve-bathrooms-that-change-lives",
+  "pt": "neve-banheiros-que-mudam-vidas"
+ },
+ "status": "publicado",
+ "exibir_no_portfolio": true,
+ "destaque": true,
+ "ordem": 1,
+ "ano": "2020",
+ "cor": "#FF4B1F",
+ "cor_texto": "#1B1A18",
+ "cliente": "Neve",
+ "agencia": "",
+ "ficha": {
+  "cliente_rotulo": {
+   "en": "Client",
+   "pt": ""
+  },
+  "cliente_sub": {
+   "en": "Kimberly-Clark",
+   "pt": ""
+  },
+  "meio": [
+   {
+    "rotulo": {
+     "en": "Production",
+     "pt": ""
+    },
+    "valor": {
+     "en": "PlayGround Brasil",
+     "pt": ""
+    }
+   },
+   {
+    "rotulo": {
+     "en": "Team",
+     "pt": ""
+    },
+    "valor": {
+     "en": "5 credited",
+     "pt": ""
+    }
+   }
+  ]
+ },
+ "etiqueta": "Aired",
+ "titulo": {
+  "en": "Bathrooms that change lives",
+  "pt": ""
+ },
+ "nome_card": {
+  "en": "Neve",
+  "pt": ""
+ },
+ "resumo": {
+  "en": "Art direction, illustration and storyboard for a Neve and PlayGround documentary on bringing sanitation to people who live without it.",
+  "pt": ""
+ },
+ "papel": {
+  "en": "Art direction, illustration & storyboard",
+  "pt": ""
+ },
+ "duracao": {
+  "en": "3 weeks",
+  "pt": ""
+ },
+ "blocos": {
+  "desafio": {
+   "en": "Neve and PlayGround Brasil made a documentary about Banheiros Mudam Vidas, a program that backs low-cost sanitation, like biodigesters, in a country where half the people lack basic sanitation. My job was the look: illustrated scenes that kept the campaign's palette and textures.\n\nThe brief asked for a lot to look at in every scene. The deadline was short, and the art had to be easy for a small animation team to pick up and move.",
+   "pt": ""
+  },
+  "processo": {
+   "en": "I drew the concept and the storyboard by hand. Paper gives the line more weight and the compositions more structure. Because I animate, I drew with the motion already in mind.\n\nThe storyboard fixed the camera move for every scene, so I built one layout the camera could travel through, from one setting to the next. Then I finished each scene digitally, one by one, in files the animators could pick up and move fast on a short deadline. I also left a library of assets and textures, so the editors could keep building the film on their own.",
+   "pt": ""
+  },
+  "resultado": {
+   "en": "A 7-minute documentary released on PlayGround Brasil's YouTube channel in October 2020, directed by Wudd, Danilo Pontes and Leonardo Trintinalia, animated by Felipe Braidott and Leonardo Trintinalia.\n\nThe hand-drawn line made it through the digital finish and frames the people telling their stories.",
+   "pt": ""
+  }
+ },
+ "card": {
+  "mascara": "m-h",
+  "classe": "c1",
+  "posicao": "center 30%"
+ },
+ "loop": {
+  "src": "/media/neve-banheiros/neve_1.mp4",
+  "poster": "/media/neve-banheiros/neve_1.webp",
+  "alt": {
+   "en": "Loop from the film: stacked houses on a hill with a blue stream in front",
+   "pt": ""
+  },
+  "mascara": "r-tira"
+ },
+ "filme": {
+  "provider": "youtube",
+  "url": "https://www.youtube.com/watch?v=ByFQ06qm7hQ",
+  "rotulo": {
+   "en": "Watch the documentary on YouTube",
+   "pt": ""
+  }
+ },
+ "mix": true,
+ "proximo_mascara": "r-pedaco",
+ "processo": [
+  {
+   "src": "/media/neve-banheiros/raff1.webp",
+   "alt": {
+    "en": "Six colored-pencil storyboard sketches: hills, stacked houses, a lone figure, a spiral, a house under a tree",
+    "pt": ""
+   },
+   "classe": "q1",
+   "legenda": {
+    "en": "Storyboard drawn by hand, before any pixel",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/neve-banheiros/raff2.webp",
+   "alt": {
+    "en": "Photos of six interviewees above the illustrated scene where they appear as characters",
+    "pt": ""
+   },
+   "classe": "q2",
+   "legenda": {
+    "en": "Real interviewees, redrawn as characters",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/neve-banheiros/01.webp",
+   "alt": {
+    "en": "Several scenes joined into one layout, with red camera frames and arrows showing the move",
+    "pt": ""
+   },
+   "classe": "q3",
+   "legenda": {
+    "en": "One layout, camera path drawn in red",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/neve-banheiros/raff3.webp",
+   "alt": {
+    "en": "Wine, gold and blue palette swatches beside textures, photos and an illustrated woman and house",
+    "pt": ""
+   },
+   "classe": "q4",
+   "legenda": {
+    "en": "Palette and textures carried from the campaign",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/neve-banheiros/raff4.webp",
+   "alt": {
+    "en": "Sketchbook spread with pencil studies of tree trunks and rounded stone shapes",
+    "pt": ""
+   },
+   "classe": "q5",
+   "estilo": "--h:260px",
+   "mascara": "r-tira",
+   "rasgado": true,
+   "legenda": {
+    "en": "Sketchbook: trunks and stones",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/neve-banheiros/raff5.webp",
+   "alt": {
+    "en": "Sketchbook spread with pencil studies of potted plants and leaves",
+    "pt": ""
+   },
+   "classe": "q6",
+   "estilo": "--h:300px",
+   "mascara": "r-pedaco",
+   "rasgado": true,
+   "legenda": {
+    "en": "Sketchbook: plants for the asset library",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/neve-banheiros/raff6.webp",
+   "alt": {
+    "en": "Sketchbook spread with pencil studies of leaf shapes and handwritten notes",
+    "pt": ""
+   },
+   "classe": "q7",
+   "estilo": "--h:240px",
+   "mascara": "r-canto",
+   "rasgado": true,
+   "legenda": {
+    "en": "Sketchbook: leaf shapes",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/neve-banheiros/05.webp",
+   "alt": {
+    "en": "Three scenes side by side in one wide layout, red frames and arrows marking the camera travel",
+    "pt": ""
+   },
+   "classe": "q8",
+   "legenda": {
+    "en": "Camera travel planned across three settings",
+    "pt": ""
+   }
+  }
+ ],
+ "resultado": [
+  {
+   "src": "/media/neve-banheiros/neve_3.mp4",
+   "alt": {
+    "en": "Loop: animated title text over illustrated rooftops and power lines",
+    "pt": ""
+   },
+   "classe": "s1",
+   "mascara": "r-tira",
+   "pb": true
+  },
+  {
+   "src": "/media/neve-banheiros/08.webp",
+   "alt": {
+    "en": "Small figure walking under a pale ringed sun, framed by wine-colored plants",
+    "pt": ""
+   },
+   "classe": "s2",
+   "mascara": "r-vertical_v2"
+  },
+  {
+   "src": "/media/neve-banheiros/09_2.webp",
+   "alt": {
+    "en": "Illustrated hillside of stacked houses among wine-colored trees, a path in front",
+    "pt": ""
+   },
+   "classe": "s3",
+   "mascara": "r-pedaco"
+  },
+  {
+   "src": "/media/neve-banheiros/06.webp",
+   "alt": {
+    "en": "Cross-section of a house linked by pipes to an underground biodigester and a filter bed",
+    "pt": ""
+   },
+   "classe": "s4",
+   "mascara": "r-canto"
+  }
+ ],
+ "decor": {
+  "cs-h": "<span aria-hidden=\"true\" class=\"sc b b-circulo_b px px2\" style=\"--ink:#FCD400;right:4%;top:70px;width:280px;height:86px;transform:rotate(6deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#19D3F3;right:14%;top:330px;width:110px;height:108px\"></span>",
+  "film": "<span aria-hidden=\"true\" class=\"sc b b-sublinhado_e px px5 fg\" style=\"--ink:#FF4B1F;left:6%;bottom:-36px;width:560px;height:94px\"></span><span aria-hidden=\"true\" class=\"sc b b-triangulo_a px px4 fg\" style=\"--ink:#FCD400;right:5%;top:-34px;width:120px;height:80px;transform:rotate(-8deg)\"></span>",
+  "b1": "<span aria-hidden=\"true\" class=\"sc b b-risco_a px px1\" style=\"--ink:#F0387A;left:20px;top:200px;width:300px;height:111px;transform:rotate(-3deg)\"></span>",
+  "b1>brief-img": "<span aria-hidden=\"true\" class=\"sc b b-circulo_c px px4 fg\" style=\"--ink:#FF4B1F;right:6%;top:40%;width:420px;height:161px;transform:rotate(-6deg)\"></span>",
+  "b2": "<span aria-hidden=\"true\" class=\"sc b b-mancha_a px px3\" style=\"--ink:#FCD400;left:-40px;top:420px;width:150px;height:131px\"></span>",
+  "b2>proc": "<span aria-hidden=\"true\" class=\"sc b b-diagonal_a px px2 fg\" style=\"--ink: #4A1BA6; top: 46px; width: 160px; height: 86px; position: absolute; left: 1086px\"></span>",
+  "b3": "<span aria-hidden=\"true\" class=\"sc b b-circulo_e px px2\" style=\"--ink:#FF4B1F;left:150px;top:150px;width:320px;height:117px;transform:rotate(-4deg)\"></span>",
+  "b3>stills": "<span aria-hidden=\"true\" class=\"sc b b-vertical_a px px4 fg\" style=\"--ink: #1BE07D; top: 59px; width: 46px; height: 129px; transform: rotate(10deg); position: absolute; left: 969px\"></span>",
+  "nx": "<span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#F0387A;left:38%;top:110px;width:120px;height:118px\"></span>",
+  "footer": "<span aria-hidden=\"true\" class=\"sc b b-sublinhado_c px px1\" style=\"--ink:#1BE07D;top:-22px;left:6%;width:40%;height:44px;transform:rotate(-1deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#F0387A;right:7%;top:40px;width:64px;height:63px\"></span>"
+ },
+ "seo": {
+  "titulo": {
+   "en": "Neve — Art Direction & Storyboard | Igor Romana",
+   "pt": "Neve — Direção de Arte e Storyboard | Igor Romana"
+  },
+  "descricao": {
+   "en": "Art direction, illustration and storyboard for Neve and PlayGround: hand-drawn scenes built for a camera that travels through the film.",
+   "pt": ""
+  }
+ },
+ "logo": "/media/logos/neve.png",
+ "brief_img": {
+  "src": "/media/neve-banheiros/capa.webp",
+  "alt": {
+   "en": "Title card for Banheiros Mudam Vidas: a woman in red among golden leaves, in Neve's wine and gold palette",
+   "pt": ""
+  },
+  "classe": "brief",
+  "mascara": "r-canto"
+ },
+ "resultado_legenda": {
+  "en": "Frames from the finished film. The loop runs in black and white; hover for color.",
+  "pt": ""
+ }
+}

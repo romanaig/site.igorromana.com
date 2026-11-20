@@ -1,0 +1,129 @@
+{
+ "id": "social-medias",
+ "slug": {
+  "en": "social-for-five-brands",
+  "pt": "social-para-cinco-marcas"
+ },
+ "status": "rascunho",
+ "exibir_no_portfolio": true,
+ "destaque": true,
+ "ordem": 5,
+ "ano": "2024–2026",
+ "cor": "#FCD400",
+ "cor_texto": "#1B1A18",
+ "cliente": "Universal · Blowtex · SKYN · Ração Max · Hits",
+ "agencia": "Cappuccino",
+ "ficha": {
+  "cliente_rotulo": {
+   "en": "Clients",
+   "pt": ""
+  },
+  "cliente_sub": {
+   "en": "Feed, stories and TikTok",
+   "pt": ""
+  },
+  "meio": [
+   {
+    "rotulo": {
+     "en": "Agency",
+     "pt": ""
+    },
+    "valor": {
+     "en": "Cappuccino",
+     "pt": ""
+    }
+   },
+   {
+    "rotulo": {
+     "en": "Team",
+     "pt": ""
+    },
+    "valor": {
+     "en": "Copy by Rodrigo Mahs, Vitor Salgueiro and Leticia Chinelato",
+     "pt": ""
+    }
+   }
+  ]
+ },
+ "etiqueta": "Aired",
+ "titulo": {
+  "en": "Social for five brands",
+  "pt": ""
+ },
+ "nome_card": {
+  "en": "Social",
+  "pt": ""
+ },
+ "resumo": {
+  "en": "Feed posts, stories and TikToks for Universal, Blowtex, SKYN, Ração Max and Hits, animated and cut at Cappuccino.",
+  "pt": ""
+ },
+ "papel": {
+  "en": "Animation & edit",
+  "pt": ""
+ },
+ "duracao": {
+  "en": "1 week per piece",
+  "pt": ""
+ },
+ "blocos": {
+  "desafio": {
+   "en": "Social ships fast and in many formats. At Cappuccino I animated and edited pieces for five very different brands between 2024 and 2026, about a week each. Universal's Dia D needed teasers that hold a secret, and Minions & Monsters a story series with Kaká and Cafu for the 2026 World Cup.\n\nBlowtex and SKYN sell condoms, so the posts had to be bold without turning vulgar. Ração Max wanted a pet telenovela. Hits needed nail colors that read in two seconds on TikTok.",
+   "pt": ""
+  },
+  "processo": {
+   "en": "For Dia D, coordinates of Varginha and Chapada dos Veadeiros glitch on screen and resolve into the release date. For Blowtex, a roller-coaster ride does the talking on Orgasm Day, and the Hot and long-lasting lines get type that lands on the beat. For Minions, I treated the stories as one sequence, so each one picks up where the last stops. Entre Patas e Lambeijos plays a one-minute novela for Ração Max, cut like a soap opera.\n\nFor Hits, each polish color meets a look, ending on the colors that will mark 2026. Every piece came from one master project, cut to feed, 9:16 stories, TikTok and short versions. On Dia D, Minions and Orgasm Day: creative direction by Diego Araujo Torres, art direction by Guilherme Oliveira and Mariana Benedito.",
+   "pt": ""
+  },
+  "resultado": {
+   "en": "The Minions & Monsters campaign went 360. These five stories with Kaká and Cafu ran on Universal's social channels, while the same campaign played in cinemas and on TV.",
+   "pt": ""
+  }
+ },
+ "card": {
+  "mascara": "m-t",
+  "classe": "c5",
+  "posicao": "center 30%"
+ },
+ "loop": {
+  "src": "/media/social-medias/montage.mp4",
+  "poster": "/media/social-medias/montage.webp",
+  "alt": {
+   "en": "Montage cut between the pieces: Dia D, Minions, Blowtex, Ração Max, SKYN and Hits",
+   "pt": ""
+  },
+  "mascara": "r-vertical_v3"
+ },
+ "filme": {
+  "provider": "ancora",
+  "url": "#pieces",
+  "rotulo": {
+   "en": "Watch the pieces",
+   "pt": ""
+  }
+ },
+ "mix": false,
+ "proximo_mascara": "r-tira",
+ "processo": [],
+ "resultado": [],
+ "decor": {
+  "cs-h": "<span aria-hidden=\"true\" class=\"sc b b-circulo_b px px2\" style=\"--ink:#FCD400;right:4%;top:70px;width:280px;height:86px;transform:rotate(6deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink: #B9A4FF; right: 91px; top: 330px; width: 221px; height: 217px\"></span>",
+  "film": "<span aria-hidden=\"true\" class=\"sc b b-sublinhado_e px px5 fg\" style=\"--ink:#FCD400;left:6%;bottom:-36px;width:560px;height:94px\"></span>",
+  "b1": "<span aria-hidden=\"true\" class=\"sc b b-risco_a px px1\" style=\"--ink:#19D3F3;left:20px;top:200px;width:300px;height:111px;transform:rotate(-3deg)\"></span>",
+  "b2": "<span aria-hidden=\"true\" class=\"sc b b-mancha_a px px3\" style=\"--ink:#F0387A;left:-40px;top:420px;width:150px;height:131px\"></span><span aria-hidden=\"true\" class=\"sc b b-diagonal_a px px2 fg\" style=\"--ink:#4A1BA6;right:3%;top:900px;width:160px;height:86px\"></span>",
+  "b3": "<span aria-hidden=\"true\" class=\"sc b b-circulo_e px px2\" style=\"--ink:#FCD400;left:150px;top:110px;width:320px;height:117px;transform:rotate(-4deg)\"></span>",
+  "b4": "<span aria-hidden=\"true\" class=\"sc b b-mancha_a px px3\" style=\"--ink:#F0387A;right:4%;top:60px;width:130px;height:114px\"></span>",
+  "nx": "<span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#19D3F3;left:38%;top:110px;width:120px;height:118px\"></span>",
+  "footer": "<span aria-hidden=\"true\" class=\"sc b b-sublinhado_c px px1\" style=\"--ink:#1BE07D;top:-22px;left:6%;width:40%;height:44px;transform:rotate(-1deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#F0387A;right:7%;top:40px;width:64px;height:63px\"></span>"
+ },
+ "seo": {
+  "titulo": {
+   "en": "Social for five brands — Animation & Edit | Igor Romana",
+   "pt": "Social para cinco marcas — Animação e Edição | Igor Romana"
+  },
+  "descricao": {
+   "en": "Social at Cappuccino: a glitch teaser for Universal's Dia D, Minions & Monsters stories with Kaká, a roller-coaster spot for Blowtex.",
+   "pt": ""
+  }
+ }
+}

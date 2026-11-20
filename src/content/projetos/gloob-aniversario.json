@@ -1,0 +1,234 @@
+{
+ "id": "gloob-aniversario",
+ "slug": {
+  "en": "gloob-new-year",
+  "pt": "gloob-ano-novo"
+ },
+ "status": "rascunho",
+ "exibir_no_portfolio": true,
+ "destaque": true,
+ "ordem": 4,
+ "ano": "2021",
+ "cor": "#F0387A",
+ "cor_texto": "#1B1A18",
+ "cliente": "Gloob",
+ "agencia": "Piloto TV",
+ "ficha": {
+  "cliente_rotulo": {
+   "en": "Client",
+   "pt": ""
+  },
+  "cliente_sub": {
+   "en": "Kids TV channel",
+   "pt": ""
+  },
+  "meio": [
+   {
+    "rotulo": {
+     "en": "Studio",
+     "pt": ""
+    },
+    "valor": {
+     "en": "Piloto TV",
+     "pt": ""
+    }
+   },
+   {
+    "rotulo": {
+     "en": "Team",
+     "pt": ""
+    },
+    "valor": {
+     "en": "Animation team of 3",
+     "pt": ""
+    }
+   }
+  ]
+ },
+ "etiqueta": "Aired",
+ "titulo": {
+  "en": "Gloob New Year",
+  "pt": ""
+ },
+ "nome_card": {
+  "en": "Gloob New Year",
+  "pt": ""
+ },
+ "resumo": {
+  "en": "Five animated scenes for Gloob's New Year campaign, with characters based on real influencers.",
+  "pt": ""
+ },
+ "papel": {
+  "en": "Animation",
+  "pt": ""
+ },
+ "duracao": {
+  "en": "1 week",
+  "pt": ""
+ },
+ "blocos": {
+  "desafio": {
+   "en": "Gloob wanted a New Year spot starring characters based on real influencers. They had to move like those people: their energy, their timing. I animated five scenes at Piloto TV, alongside Ivan Franco and Ullisses Soares.\n\nThe bar was rhythm: every action organic and expressive, and readable inside the channel's loud, saturated art direction.",
+   "pt": ""
+  },
+  "processo": {
+   "en": "In After Effects, the characters were cut-out puppets: every part on its own layer, animated by hand, keyframe by keyframe, with no rig. That kept every arc and overlap in my hands. For the acting, I filmed myself doing each action and used the footage as reference for weight and timing.\n\nThen I worked scene by scene on sync: where an action lands, how long a pose holds, how a move settles. I kept the motion clean so it didn't fight the saturated palette set by art director Enio Vital.",
+   "pt": ""
+  },
+  "resultado": {
+   "en": "Five scenes in one week, for a 30-second spot in the 2022 New Year campaign, on air on the Gloob channel from November 2021. Directed by Alexandre Chalabi, edited by Jéssica Rodrigues. Hand-keyed cut-outs and my own acting reference kept each character close to the person behind it.",
+   "pt": ""
+  }
+ },
+ "card": {
+  "mascara": "m-c",
+  "classe": "c4",
+  "posicao": "center"
+ },
+ "loop": {
+  "src": "/media/gloob-aniversario/gloob_02.mp4",
+  "poster": "/media/gloob-aniversario/gloob_02.webp",
+  "alt": {
+   "en": "Loop from the spot: a kid inside an astronaut helmet",
+   "pt": ""
+  },
+  "mascara": "r-canto"
+ },
+ "filme": {
+  "provider": "vimeo",
+  "url": "https://vimeo.com/1201936732",
+  "rotulo": {
+   "en": "Watch the spot on Vimeo",
+   "pt": ""
+  },
+  "id": "1201936732"
+ },
+ "mix": false,
+ "proximo_mascara": "r-diagonal",
+ "processo": [
+  {
+   "src": "/media/FALTA/12cdacb1ca815550973ff8d74fe81141",
+   "alt": {
+    "en": "A boy with star eyes holds a magic lamp as a cut-out genie rises in a spiral",
+    "pt": ""
+   },
+   "classe": "q1",
+   "legenda": {
+    "en": "The genie",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/FALTA/d9518155c7cb6c96e74c4c80eeb374b6",
+   "alt": {
+    "en": "A girl in a pink helmet rides a bike across a small planet in deep blue space",
+    "pt": ""
+   },
+   "classe": "q2",
+   "legenda": {
+    "en": "Riding a planet",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/FALTA/a4d366970ca8b286b0edb6740a8a0311",
+   "alt": {
+    "en": "Photo collage of a kid as an astronaut, a hand passing a giant fry, on purple starry paper",
+    "pt": ""
+   },
+   "classe": "q3",
+   "legenda": {
+    "en": "Space snack",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/FALTA/cfe687a3bbb88cd53e5fae255e8da436",
+   "alt": {
+    "en": "A kid's head on a paper robot in giant sneakers, striding through a green paper city",
+    "pt": ""
+   },
+   "classe": "q4",
+   "legenda": {
+    "en": "Robot walk",
+    "pt": ""
+   }
+  }
+ ],
+ "resultado": [
+  {
+   "src": "/media/FALTA/f77e7f7e28439a875cd5c0545dfd4221",
+   "poster": "/media/FALTA/56d650a7626601db029e2417149d00be",
+   "alt": {
+    "en": "Animated loop: a smiling boy with star-shaped eyes",
+    "pt": ""
+   },
+   "classe": "s1",
+   "mascara": "r-vertical",
+   "pb": true
+  },
+  {
+   "src": "/media/FALTA/baff13b5d72655e67c7ac71568becc91",
+   "poster": "/media/FALTA/cf7bee74bc258b4a9be1a99aa4ed2811",
+   "alt": {
+    "en": "Animated loop: a girl in a photo frame on top of a layered cake",
+    "pt": ""
+   },
+   "classe": "s2",
+   "mascara": "r-tira-diagonal",
+   "pb": true
+  },
+  {
+   "src": "/media/FALTA/e929446327930be9b3b8d3b23c14814c",
+   "alt": {
+    "en": "A kid waves from a treehouse above a skyline of Christ the Redeemer, Eiffel Tower and Empire State",
+    "pt": ""
+   },
+   "classe": "s3",
+   "mascara": "r-diagonal"
+  },
+  {
+   "src": "/media/FALTA/cfe687a3bbb88cd53e5fae255e8da436",
+   "alt": {
+    "en": "A kid's head on a paper robot in giant sneakers, striding through a green paper city",
+    "pt": ""
+   },
+   "classe": "s4",
+   "mascara": "r-canto"
+  }
+ ],
+ "decor": {
+  "cs-h": "<span aria-hidden=\"true\" class=\"sc b b-circulo_b px px2\" style=\"--ink:#FCD400;right:4%;top:70px;width:280px;height:86px;transform:rotate(6deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#19D3F3;right:14%;top:330px;width:110px;height:108px\"></span>",
+  "film": "<span aria-hidden=\"true\" class=\"sc b b-sublinhado_e px px5 fg\" style=\"--ink:#F0387A;left:6%;bottom:-36px;width:560px;height:94px\"></span><span aria-hidden=\"true\" class=\"sc b b-triangulo_a px px4 fg\" style=\"--ink:#FCD400;right:5%;top:-34px;width:120px;height:80px;transform:rotate(-8deg)\"></span>",
+  "b1": "<span aria-hidden=\"true\" class=\"sc b b-risco_a px px1\" style=\"--ink:#19D3F3;left:20px;top:200px;width:300px;height:111px;transform:rotate(-3deg)\"></span>",
+  "b1>brief-img": "<span aria-hidden=\"true\" class=\"sc b b-circulo_c px px4 fg\" style=\"--ink:#F0387A;right:6%;top:40%;width:420px;height:161px;transform:rotate(-6deg)\"></span>",
+  "b2": "<span aria-hidden=\"true\" class=\"sc b b-mancha_a px px3\" style=\"--ink:#FCD400;left:-40px;top:420px;width:150px;height:131px\"></span><span aria-hidden=\"true\" class=\"sc b b-diagonal_a px px2 fg\" style=\"--ink:#B6F02E;right:3%;top:900px;width:160px;height:86px\"></span>",
+  "b3": "<span aria-hidden=\"true\" class=\"sc b b-circulo_e px px2\" style=\"--ink:#F0387A;left:150px;top:150px;width:320px;height:117px;transform:rotate(-4deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-vertical_a px px4 fg\" style=\"--ink:#19D3F3;right:5%;top:760px;width:46px;height:129px;transform:rotate(10deg)\"></span>",
+  "nx": "<span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#19D3F3;left:38%;top:110px;width:120px;height:118px\"></span>",
+  "footer": "<span aria-hidden=\"true\" class=\"sc b b-sublinhado_c px px1\" style=\"--ink:#1BE07D;top:-22px;left:6%;width:40%;height:44px;transform:rotate(-1deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#F0387A;right:7%;top:40px;width:64px;height:63px\"></span>"
+ },
+ "seo": {
+  "titulo": {
+   "en": "Gloob New Year — 2D Character Animation | Igor Romana",
+   "pt": "Ano Novo Gloob — Animação 2D de Personagens | Igor Romana"
+  },
+  "descricao": {
+   "en": "Five After Effects scenes for Gloob's New Year campaign: characters based on real influencers, animated for rhythm and timing.",
+   "pt": ""
+  }
+ },
+ "logo": "/media/logos/gloob.png",
+ "brief_img": {
+  "src": "/media/FALTA/838ccdf3d57025f2e2c559004f45b18e",
+  "alt": {
+   "en": "Two boys bump fists with long knitted-texture arms over a red, purple and yellow starburst",
+   "pt": ""
+  },
+  "classe": "brief",
+  "mascara": "r-canto"
+ },
+ "resultado_legenda": {
+  "en": "Scenes from the spot. The loops run in black and white; hover for color.",
+  "pt": ""
+ }
+}

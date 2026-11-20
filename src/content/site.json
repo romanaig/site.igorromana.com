@@ -1,0 +1,100 @@
+{
+  "site": {
+    "indexar": false,
+    "nome": "Igor Romana",
+    "url": "https://igorromana.com",
+    "titulo": { "en": "Motion Designer & Editor", "pt": "Motion Designer & Editor" },
+    "linha2": { "en": "2D & handmade collage animation, drawn on paper first.", "pt": "Animação 2D e colagem feita à mão." },
+    "frase": { "en": "Drawn on paper, animated and cut on screen.", "pt": "" },
+    "disponibilidade": { "en": "Remote · GMT-3", "pt": "Remoto · GMT-3" },
+    "cta": {
+      "rotulo": { "en": "Get a quote", "pt": "Pedir orçamento" },
+      "mailto": "romana.olha@gmail.com",
+      "assunto": { "en": "Project inquiry — igorromana.com", "pt": "Orçamento — igorromana.com" },
+      "corpo": { "en": "Hi Igor, here's the project.\n\nName:\nCompany:\nDeadline:\nBudget:\nLink:", "pt": "" },
+      "chamada_home": { "en": "Got a brief?\nSend it over.", "pt": "" },
+      "chamada_case": { "en": "Have a film\nto make?", "pt": "" }
+    },
+    "reel": {
+      "vimeo_id": "994845659",
+      "url": "https://vimeo.com/994845659",
+      "loop": "/media/home/reel-loop.mp4",
+      "poster": "/media/home/reel-poster.webp"
+    },
+    "logos": [
+      { "marca": "Carrefour", "src": "/media/logos/carrefour.png", "cor": 4 },
+      { "marca": "Ajinomoto", "src": "/media/logos/ajinomoto.png", "cor": 5 },
+      { "marca": "Blowtex", "src": "/media/logos/blowtex.png", "cor": 3 },
+      { "marca": "Universal", "src": "/media/logos/universal.png", "cor": 2 },
+      { "marca": "Budweiser", "src": "/media/logos/budweiser.png", "cor": 1 },
+      { "marca": "Samsung", "src": "/media/logos/samsung.png", "cor": 3, "inclinado": true },
+      { "marca": "Jack Daniel’s", "src": "/media/logos/jack-daniels.png", "cor": 4 },
+      { "marca": "Neve", "src": "/media/logos/neve.png", "cor": 1 },
+      { "marca": "Gloob", "src": "/media/logos/gloob.png", "cor": 5 },
+      { "marca": "Decathlon", "src": "/media/logos/decathlon.png", "cor": 2 }
+    ],
+    "depoimentos": [
+      {
+        "texto": { "en": "…not only an awesome human being but also an amazing professional. He consistently focuses not only on creative ways to produce a film that meets client expectations but also on meeting consumer expectations. He knows how to contribute to brand building and how to engage an audience.", "pt": "" },
+        "autor": "Milton Cebola Mastrocessario",
+        "cargo": { "en": "Partner & Creative Director, FORIN In-house Agency · managed Igor directly", "pt": "" },
+        "link": "https://www.linkedin.com/in/milton-cebola-mastrocessario-8a84815/",
+        "cor": 4,
+        "inclinado": true
+      },
+      {
+        "texto": { "en": "Igor is a deeply committed professional who delivers quality work even under heavy pressure and high demand. Proactive, he always researches to bring innovation and good references to the work. With impeccable taste, the work he delivers always delights clients. Highly recommended.", "pt": "" },
+        "autor": "Mayra Gaino",
+        "cargo": { "en": "Project Manager, Account · worked with Igor on the same team", "pt": "" },
+        "link": "https://www.linkedin.com/in/mayra-gaino-77037644/",
+        "cor": 2
+      }
+    ],
+    "sobre": {
+      "en": "I'm Igor Romana, a motion designer and editor based in São Paulo. I studied graphic design at Belas Artes and have spent over ten years animating and cutting in agencies and production companies. With the agency Cappuccino, I animate and edit for Carrefour, Ajinomoto, Blowtex and Universal. Before that, I worked on campaigns for Globo, Samsung, Jack Daniel's, Budweiser, Decathlon, AXA Seguros and Banco Santander, and on films for Neve and Gloob.\n\nI start on paper and think about the whole pipeline. I've drawn since I was six, and because I animate and edit, I draw already knowing how a frame will move and where it will be cut. Outside client work I paint, and I've shown in group exhibitions in São Paulo. Years behind a drum kit gave me discipline and an ear for timing.\n\nI work remotely on GMT-3, which overlaps well with Europe and the Americas. Send your brief, deadline and budget through Get a quote, and I'll reply within one working day.",
+      "pt": ""
+    },
+    "cv": { "en": "/cv/igor-romana-cv-en.pdf", "pt": "/cv/igor-romana-cv-pt.pdf" },
+    "contatos": [
+      { "tipo": "linkedin", "rotulo": "LinkedIn", "url": "https://www.linkedin.com/in/igor-romana/", "cor": 3 },
+      { "tipo": "instagram", "rotulo": "Instagram", "url": "https://www.instagram.com/romanaig", "cor": 2 },
+      { "tipo": "substack", "rotulo": "Substack", "url": "https://romanaig.substack.com/", "cor": 5 },
+      { "tipo": "behance", "rotulo": "Behance", "url": "https://www.behance.net/igor_romana", "cor": 4 },
+      { "tipo": "vimeo", "rotulo": "Vimeo", "url": "https://vimeo.com/igorromana", "cor": 1 }
+    ],
+    "servicos": {
+      "en": ["Motion design & animation", "Video editing", "Collage / handmade animation", "Podcast & YouTube graphics packages", "Social ad versioning", "Storyboards & styleframes"],
+      "pt": ["Motion design e animação", "Edição de vídeo", "Animação em colagem feita à mão", "Pacotes gráficos para podcast e YouTube", "Versões de anúncios para redes sociais", "Storyboards e styleframes"]
+    },
+    "seo": {
+      "titulo": { "en": "Igor Romana — Motion Designer & Editor | 2D & Collage Animation", "pt": "Igor Romana — Motion Designer & Editor | Animação 2D e Colagem" },
+      "descricao": { "en": "Motion designer and editor in São Paulo, remote on GMT-3. 2D and handmade collage animation for agencies, studios and brands.", "pt": "Motion designer e editor em São Paulo, remoto (GMT-3). Animação 2D e colagem feita à mão para agências, produtoras e marcas." },
+      "og": "/media/og/home.jpg"
+    },
+    "analytics": { "cloudflare_token": "" },
+    "ui": {
+      "menu": { "work": { "en": "Work", "pt": "Trabalhos" }, "about": { "en": "About", "pt": "Sobre" }, "archive": { "en": "Archive", "pt": "Arquivo" } },
+      "trocar_idioma": { "en": "Português", "pt": "English" },
+      "cases_titulo": { "en": "Selected work", "pt": "" },
+      "logos_titulo": { "en": "Brands", "pt": "" },
+      "depoimentos_titulo": { "en": "Word from clients", "pt": "" },
+      "mesa_rotulo": { "en": "Work table: click a cut-out for details", "pt": "" },
+      "mesa_dica": { "en": "Swipe through the frames", "pt": "" },
+      "ver_arquivo": { "en": "See the full archive", "pt": "" },
+      "ver_case": { "en": "View case", "pt": "" },
+      "assistir": { "en": "Watch", "pt": "" },
+      "fechar": { "en": "Close", "pt": "" },
+      "reel": { "en": "Play reel", "pt": "" },
+      "reel_aria": { "en": "Play reel on Vimeo, with sound", "pt": "" },
+      "proximo_case": { "en": "Next case", "pt": "" },
+      "ficha": {
+        "cliente": { "en": "Client", "pt": "" }, "agencia": { "en": "Agency", "pt": "" }, "papel": { "en": "Role", "pt": "" },
+        "producao": { "en": "Production", "pt": "" }, "equipe": { "en": "Team", "pt": "" }, "ano": { "en": "Year", "pt": "" },
+        "duracao": { "en": "Duration", "pt": "" }, "status": { "en": "Status", "pt": "" }
+      },
+      "blocos": { "desafio": { "en": "Brief", "pt": "" }, "processo": { "en": "Process", "pt": "" }, "resultado": { "en": "Result", "pt": "" } },
+      "fatos": { "en": "Project facts", "pt": "" },
+      "erro404": { "titulo": { "en": "Lost frame", "pt": "" }, "frase": { "en": "This page isn't here. Maybe it got cut in the edit.", "pt": "" }, "link": { "en": "Back to home", "pt": "" } }
+    }
+  }
+}

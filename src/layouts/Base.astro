@@ -1,0 +1,90 @@
+---
+// Moldura comum: <head> (SEO, idiomas, fontes do próprio site), player do Vimeo e métricas sem cookies.
+import '@fontsource/big-shoulders-display/latin-900';
+import '@fontsource/big-shoulders-display/latin-ext-900';
+import '@fontsource/courier-prime/latin-400';
+import '@fontsource/courier-prime/latin-ext-400';
+import '@fontsource/courier-prime/latin-700';
+import '@fontsource/courier-prime/latin-ext-700';
+import '../styles/player.css';
+import { getSite, t, type Lang } from '../lib/site';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  path: string;            // caminho desta página (ex.: /projects/x/)
+  alternate?: string;      // caminho da mesma página no outro idioma, se existir
+  og?: string;
+  jsonld?: Record<string, unknown>[];
+}
+const { lang, title, description, path, alternate, og, jsonld = [] } = Astro.props;
+const site = await getSite();
+const abs = (p: string) => new URL(p, site.url).href;
+const enPath = lang === 'en' ? path : alternate;
+const ptPath = lang === 'pt' ? path : alternate;
+const ogImg = og ?? site.seo.og;
+const token = site.analytics.cloudflare_token;
+---
+<!doctype html>
+<html lang={lang === 'pt' ? 'pt-BR' : 'en'}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<meta name="description" content={description}>
+<link rel="canonical" href={abs(path)}>
+{!site.indexar && <meta name="robots" content="noindex, nofollow">}
+{enPath && <link rel="alternate" hreflang="en" href={abs(enPath)}>}
+{ptPath && <link rel="alternate" hreflang="pt-BR" href={abs(ptPath)}>}
+{enPath && <link rel="alternate" hreflang="x-default" href={abs(enPath)}>}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content={site.nome}>
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:url" content={abs(path)}>
+<meta property="og:image" content={abs(ogImg)}>
+<meta property="og:locale" content={lang === 'pt' ? 'pt_BR' : 'en_US'}>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1B1A18">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+{jsonld.map((j) => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
+<slot name="head" />
+</head>
+<body>
+<slot />
+<dialog class="vplayer" aria-label={t(site.ui.reel, lang)}>
+  <div class="vplayer-box"><iframe title="Vimeo" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+  <button class="vplayer-x" type="button" aria-label={t(site.ui.fechar, lang)}>×</button>
+</dialog>
+<script>
+  // Vimeo numa caixa sobre a página, com dnt=1 (sem cookies de rastreio). Sem JS, o link abre o Vimeo.
+  const dlg = document.querySelector<HTMLDialogElement>('dialog.vplayer');
+  const frame = dlg?.querySelector('iframe');
+  document.addEventListener('click', (ev) => {
+    const a = (ev.target as Element).closest<HTMLAnchorElement>('a[data-vimeo]');
+    if (!a || !dlg || !frame || typeof dlg.showModal !== 'function') return;
+    ev.preventDefault();
+    frame.src = `https://player.vimeo.com/video/${a.dataset.vimeo}?autoplay=1&dnt=1&title=0&byline=0&portrait=0`;
+    dlg.showModal();
+  });
+  dlg?.querySelector('.vplayer-x')?.addEventListener('click', () => dlg.close());
+  dlg?.addEventListener('click', (ev) => { if (ev.target === dlg) dlg.close(); });
+  dlg?.addEventListener('close', () => { if (frame) frame.src = 'about:blank'; });
+
+  // Loops fora da primeira tela só baixam quando chegam perto (o pôster aparece antes).
+  const vids = document.querySelectorAll<HTMLVideoElement>('video[data-src]');
+  const load = (v: HTMLVideoElement) => {
+    v.src = v.dataset.src!; v.removeAttribute('data-src');
+    if (v.autoplay) v.play().catch(() => {});
+  };
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) if (e.isIntersecting) { io.unobserve(e.target); load(e.target as HTMLVideoElement); }
+    }, { rootMargin: '300px 0px' });
+    vids.forEach((v) => io.observe(v));
+  } else vids.forEach(load);
+</script>
+{token && <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token })}></script>}
+</body>
+</html>

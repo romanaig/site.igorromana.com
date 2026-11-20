@@ -1,0 +1,8 @@
+---
+import Home from '../components/pages/Home.astro';
+import { getSite, ptCompleto } from '../lib/site';
+const site = await getSite();
+// O link para /pt/ só aparece quando a home em PT existir (todos os textos pt preenchidos).
+const alternate = ptCompleto({ ...site, ui: {} }) ? '/pt/' : undefined;
+---
+<Home lang="en" alternate={alternate} />

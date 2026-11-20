@@ -1,0 +1,120 @@
+---
+// Home (prancha "Home — desktop/mobile" do canvas). Textos e listas vêm de src/content.
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Footer from '../Footer.astro';
+import '../../styles/home.css';
+import decor from '../../data/decor-home.json';
+import { getSite, getAllCases, t, paths, quoteHref, type Lang } from '../../lib/site';
+
+interface Props { lang: Lang; alternate?: string }
+const { lang, alternate } = Astro.props;
+const site = await getSite();
+const ui = site.ui;
+const cases = await getAllCases();
+const arquivo = new Map((await getCollection('arquivo')).map((e) => [e.id, e.data]));
+const mesa = (await getCollection('mesa')).map((e) => ({ id: e.id, ...e.data }));
+const naMesa = [...new Set(mesa.map((m) => m.trabalho))];
+const carrossel = mesa.filter((m) => m.carrossel).sort((a, b) => (a.carrossel_ordem ?? 0) - (b.carrossel_ordem ?? 0));
+const quote = quoteHref(site, lang);
+const nomeCores = ['#F0387A', '#FCD400', '#1BE07D'];
+const palavras = site.nome.split(' ');
+let i = 0;
+const fotoClasse: Record<string, string> = { 'neve-banheiros': 'p-neve', desenrola: 'p-desenrola', 'pova-manifesto': 'p-pova', 'gloob-aniversario': 'p-gloob', 'social-medias': 'p-social' };
+const popId = (id: string) => `mp-${id}`;
+const assistir = (rotulo: string, primeiro: boolean) => (primeiro ? `${t(ui.assistir, lang)} on ${rotulo}` : rotulo);
+const jsonld = [{
+  '@context': 'https://schema.org', '@type': 'Person', name: site.nome, url: site.url,
+  jobTitle: `${t(site.titulo, lang)} — ${t(site.linha2, lang)}`,
+  knowsAbout: lang === 'pt' && site.servicos.pt.length ? site.servicos.pt : site.servicos.en,
+  address: { '@type': 'PostalAddress', addressLocality: 'São Paulo', addressCountry: 'BR' },
+  email: `mailto:${site.cta.mailto}`,
+  sameAs: site.contatos.map((c) => c.url),
+}];
+---
+<Base lang={lang} title={t(site.seo.titulo, lang)} description={t(site.seo.descricao, lang)} path={paths.home(lang)} alternate={alternate} jsonld={jsonld}>
+<div class="pg">
+
+<header class="hero toner">
+<div class="bg"></div><video class="bgv" src={site.reel.loop} poster={site.reel.poster} autoplay muted loop playsinline aria-hidden="true"></video><div class="ht"></div><div class="shade"></div>
+<nav class="nav" aria-label="Main"><a class="hv k5" style="padding:0 10px" href="#work">{t(ui.menu.work, lang)}</a><a class="hv k4" style="padding:0 10px" href={paths.about(lang)}>{t(ui.menu.about, lang)}</a><a class="hv k2" style="padding:0 10px" href={paths.archive(lang)}>{t(ui.menu.archive, lang)}</a>{alternate && <a class="hv k3" style="padding:0 10px" href={alternate} aria-label={t(ui.trocar_idioma, lang)}>EN / PT</a>}</nav>
+<div>
+<h1 class="t name" aria-label={site.nome}><span class="nm" aria-hidden="true">{palavras.map((w, wi) => <Fragment>{wi > 0 && ' '}<span class="wd">{[...w].map((ch) => { const n = i++; return <span class="lt" style={`--i:${n};--c:${nomeCores[n % 3]}`}>{ch}</span>; })}</span></Fragment>)}</span></h1>
+<div class="hero-row">
+<p class="t hero-title"><span class="hv hv-t k5">{t(site.titulo, lang)}</span><span class="hero-l2">{t(site.linha2, lang)}</span></p>
+<a class="play k3" href={site.reel.url} data-vimeo={site.reel.vimeo_id} aria-label={t(ui.reel_aria, lang)}><i><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><path d="M9 5 L27 16 L9 27 Z" fill="#E9E7E1"></path></svg></i><span>{t(ui.reel, lang)}</span></a>
+</div>
+</div>
+</header>
+
+<div class="strip">
+<div class="tag hv k1">{t(site.disponibilidade, lang).replace(/ · /g, ' · ')}</div>
+<a class="btn k4" href={quote}>{t(site.cta.rotulo, lang)}</a>
+</div>
+
+<main>
+<section class="sec" id="work" aria-labelledby="work-h">
+<Fragment set:html={decor.work} />
+<h2 class="t h2" id="work-h"><span class="hv hv-t k5">{t(ui.cases_titulo, lang)}</span><span class="ul" aria-hidden="true"></span></h2>
+<div class="work">
+<Fragment set:html={decor.work_grid} />
+{cases.map((c) => (
+<a class={`card ${c.card.classe}`} href={paths.project(lang, c.slug)} style={`--ink:${c.cor};--on:${c.cor_texto}`} aria-label={`${t(c.nome_card, lang)}, ${t(ui.ver_case, lang).toLowerCase()}`}>
+<div class={`cut ${c.card.mascara}`}><div class={`photo ph ${fotoClasse[c.id] ?? ''}`} style={`background-position:${c.card.posicao}`}><video class="cv" data-src={c.loop.src} poster={c.loop.poster} muted loop autoplay playsinline preload="metadata" aria-hidden="true"></video></div><div class="ink"></div><div class="gr"></div><div class="ht"></div></div>
+<div class="txt"><h3 class="t">{t(c.nome_card, lang)}</h3></div>
+<span class="go">{t(ui.ver_case, lang)}</span>
+</a>))}
+</div>
+</section>
+
+<section class="band toner" aria-label={t(ui.mesa_rotulo, lang)} style={decor.band_style}>
+<Fragment set:html={decor.band} />
+<p class="t lead"><span class="hv hv-t k3">{t(site.frase, lang)}</span></p>
+<p class="tag hint">{t(ui.mesa_dica, lang)}</p>
+<div class="mesa3">
+{mesa.map((m) => { const a = arquivo.get(m.trabalho)!; return (
+<button class="rc" popovertarget={popId(m.trabalho)} style={`--x:${m.x};--y:${m.y};--w:${m.w};--rt:${m.rt};z-index:${m.z}`} aria-label={`${t(a.titulo, lang)}, ${a.ano}. Details`}><span class={`cut ${m.mascara}`}>{m.imagem ? <span class={`sp ${m.imagem}`}></span> : <span class="sp" style={`background-position:${m.sprite}`}></span>}<span class="ht"></span></span></button>
+); })}
+{naMesa.map((id) => { const a = arquivo.get(id)!; return (
+<div class="pop" id={popId(id)} popover="auto"><p class="pt">{t(a.titulo, lang)}</p><p class="pm">{a.ano} · {a.cliente}</p><p class="pr">{t(a.papel, lang)} <span class="et">{a.etiqueta}</span></p>{a.links.map((l, li) => <Fragment>{li > 0 && ' '}<a class="btn k3" href={l.url} target="_blank" rel="noopener">{assistir(l.rotulo, li === 0)}{' ↗'}</a></Fragment>)}<button class="x" popovertarget={popId(id)} popovertargetaction="hide" aria-label={t(ui.fechar, lang)}>×</button></div>
+); })}
+</div>
+<div class="carr3" aria-label="Work, swipe sideways"><ul>
+{carrossel.map((m) => { const a = arquivo.get(m.trabalho)!; const l = a.links[0]; return (
+<li><span class="pc"><span class="cut m-c">{m.imagem ? <span class={`sp ${m.imagem}`}></span> : <span class="sp" style={`background-position:${m.sprite}`}></span>}</span></span><p class="ct"><b>{t(a.titulo, lang)}</b> {a.ano}{l && <Fragment> · <a href={l.url} target="_blank" rel="noopener">{t(ui.assistir, lang)}{' ↗'}</a></Fragment>}</p></li>
+); })}
+</ul></div>
+<p class="seeall3"><a class="hv k3" href={paths.archive(lang)}>{t(ui.ver_arquivo, lang)} →</a></p>
+</section>
+
+<section class="sec" aria-labelledby="logos-h" style="padding-top:128px">
+<Fragment set:html={decor.logos} />
+<h2 class="t h2" id="logos-h"><span class="hv hv-t k4">{t(ui.logos_titulo, lang)}</span></h2>
+<div class="logos">{site.logos.map((l) => <div class={`logo hv k${l.cor}${l.inclinado ? ' tilt' : ''}`}><img src={l.src} alt={l.marca} loading="lazy"></div>)}</div>
+</section>
+
+<section class="sec" aria-labelledby="quotes-h">
+<Fragment set:html={decor.quotes} />
+<h2 class="t h2" id="quotes-h"><span class="hv hv-t k3">{t(ui.depoimentos_titulo, lang)}</span></h2>
+<div class="quotes">
+{site.depoimentos.map((d) => (
+<figure class={`quote hv k${d.cor}${d.inclinado ? ' tilt' : ''}`}><blockquote>“{t(d.texto, lang)}”</blockquote><figcaption><b>{d.autor}</b>{t(d.cargo, lang)} · <a href={d.link}>LinkedIn</a></figcaption></figure>
+))}
+</div>
+</section>
+
+<section class="cta" aria-labelledby="cta-h">
+<Fragment set:html={decor.cta} />
+<h2 class="t big" id="cta-h"><span class="hv hv-t k2">{t(site.cta.chamada_home, lang).split('\n').map((s, si) => <Fragment>{si > 0 && <br />}{s}</Fragment>)}</span></h2>
+<div class="row"><span class="circ"><a class="btn k3" href={quote}>{t(site.cta.rotulo, lang)}</a></span><span class="tag hv k1">{t(site.disponibilidade, lang).replace(/ · /g, ' · ')}</span></div>
+</section>
+</main>
+
+<Footer lang={lang} decor={decor.footer} pad />
+</div>
+</Base>
+<style is:global>
+.hero-title{font-size:40px;line-height:.95}
+.hero-l2{display:block;margin-top:12px;font-family:var(--x);font-weight:400;text-transform:none;font-size:19px;line-height:1.4}
+@media (max-width:820px){.hero-l2{margin-top:10px;font-size:17px}}
+</style>

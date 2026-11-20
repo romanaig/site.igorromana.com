@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import TopBar from '../components/TopBar.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/case.css';
+import { getSite, t, paths } from '../lib/site';
+const site = await getSite();
+const e = site.ui.erro404;
+---
+<Base lang="en" title={`${t(e.titulo, 'en')} | ${site.nome}`} description={t(e.frase, 'en')} path="/404/">
+<div class="pg">
+<TopBar lang="en" />
+<main class="cs" style="--case-ink:#FCD400;--case-on:#1B1A18">
+<section class="wrap sec next" aria-labelledby="nf" style="min-height:60vh">
+<span class="sc b b-circulo_e px px2" aria-hidden="true" style="--ink:#F0387A;right:8%;top:120px;width:320px;height:117px;transform:rotate(-4deg)"></span>
+<span class="sc b b-mancha_b px px3" aria-hidden="true" style="--ink:#19D3F3;left:46%;top:40px;width:90px;height:88px"></span>
+<div class="ask"><h1 class="t big" id="nf"><span class="hv hv-t k4">{t(e.titulo, 'en')}</span></h1>
+<p class="cs-lead" style="margin-top:32px">{t(e.frase, 'en')}</p>
+<div class="row"><span class="circ"><a class="btn k3" href={paths.home('en')}>{t(e.link, 'en')}</a></span></div></div>
+</section>
+</main>
+<Footer lang="en" />
+</div>
+</Base>

@@ -1,0 +1,229 @@
+{
+ "id": "desenrola",
+ "slug": {
+  "en": "desenrola-ai",
+  "pt": "desenrola-ai"
+ },
+ "status": "rascunho",
+ "exibir_no_portfolio": true,
+ "destaque": true,
+ "ordem": 2,
+ "ano": "2023",
+ "cor": "#4A1BA6",
+ "cor_texto": "#E9E7E1",
+ "cliente": "Desenrola aí",
+ "agencia": "",
+ "ficha": {
+  "cliente_rotulo": {
+   "en": "Client",
+   "pt": ""
+  },
+  "cliente_sub": {
+   "en": "YouTube podcast",
+   "pt": ""
+  },
+  "meio": [
+   {
+    "rotulo": {
+     "en": "Direction & edit",
+     "pt": ""
+    },
+    "valor": {
+     "en": "Maxuel Mello",
+     "pt": ""
+    }
+   },
+   {
+    "rotulo": {
+     "en": "Team",
+     "pt": ""
+    },
+    "valor": {
+     "en": "2 people",
+     "pt": ""
+    }
+   }
+  ]
+ },
+ "etiqueta": "Aired",
+ "titulo": {
+  "en": "Desenrola aí",
+  "pt": ""
+ },
+ "nome_card": {
+  "en": "Desenrola aí",
+  "pt": ""
+ },
+ "resumo": {
+  "en": "Art direction and animation for the opening, lower thirds and transitions of Desenrola aí, a political podcast on YouTube.",
+  "pt": ""
+ },
+ "papel": {
+  "en": "Art direction & animation",
+  "pt": ""
+ },
+ "duracao": {
+  "en": "2 weeks",
+  "pt": ""
+ },
+ "blocos": {
+  "desafio": {
+   "en": "Desenrola aí is a YouTube podcast that debates politics and society for a progressive audience from Brazil's urban peripheries. Maxuel Mello directs and edits it, and he needed the show to look like one: an opening, lower thirds and transitions he could drop into every episode.\n\nThe catch was time. The package had to be ready fast and keep working, episode after episode.",
+   "pt": ""
+  },
+  "processo": {
+   "en": "I went with collage: cut-out paper and images, assembled like a poster. Cut-outs are quick to make and quick to animate, which mattered on this deadline. So I built one library of cut-outs first and pulled every piece from it. The same shapes open the show, carry names and topics in the lower thirds, and wipe between segments.\n\nOne library, three uses. It kept the package consistent and let me move fast. I timed the opening to its own track. Even the show's name assembles itself on screen from the same scraps.",
+   "pt": ""
+  },
+  "resultado": {
+   "en": "An opening cut to its own track, plus lower thirds and transitions, all built from one cut-out library. The package still runs in the channel's episodes today, and Maxuel drops it into each new one himself. Made in two weeks, in 2023.",
+   "pt": ""
+  }
+ },
+ "card": {
+  "mascara": "m-v",
+  "classe": "c2",
+  "posicao": "center"
+ },
+ "loop": {
+  "src": "/media/desenrola/loop.mp4",
+  "poster": "/media/desenrola/loop.webp",
+  "alt": {
+   "en": "Loop from the opening: cut-out paper and type assembling on screen",
+   "pt": ""
+  },
+  "mascara": "r-vertical_v2"
+ },
+ "filme": {
+  "provider": "youtube",
+  "url": "https://www.youtube.com/@DesenrolaeN%C3%A3oMeEnrola",
+  "rotulo": {
+   "en": "Watch the channel",
+   "pt": ""
+  }
+ },
+ "mix": false,
+ "proximo_mascara": "r-canto",
+ "processo": [
+  {
+   "src": "/media/FALTA/7a9c466fad3d1297cc4d3845793f48d3",
+   "alt": {
+    "en": "Transition: torn paper with printed text, a purple and yellow spray band, and the letters DES in cyan",
+    "pt": ""
+   },
+   "classe": "q1",
+   "legenda": {
+    "en": "Transition: the opening's scraps, reused",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/FALTA/763772cb4dba73fbd842e336b66bfe49",
+   "alt": {
+    "en": "Data card: a torn purple strip with a statistic and its source, over the host in the studio",
+    "pt": ""
+   },
+   "classe": "q2",
+   "legenda": {
+    "en": "Data card from the same torn paper",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/FALTA/fc616effbba1af846f87aa997ea9d999",
+   "alt": {
+    "en": "Lower third: the host's name on a purple brush stroke with yellow and cyan spray dots",
+    "pt": ""
+   },
+   "classe": "q3",
+   "legenda": {
+    "en": "Lower third: host",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/FALTA/b2e85ac8542006a23963451beb2925f6",
+   "alt": {
+    "en": "Transition: a torn edge opens from printed text to a rainbow flag",
+    "pt": ""
+   },
+   "classe": "q4",
+   "legenda": {
+    "en": "Transition into a topic",
+    "pt": ""
+   }
+  }
+ ],
+ "resultado": [
+  {
+   "src": "/media/FALTA/b8d1d6332aaffe9d7e03bfd123bfe24e",
+   "alt": {
+    "en": "Lower third over a two-shot: the guest's name and job on the purple stroke",
+    "pt": ""
+   },
+   "classe": "s1",
+   "mascara": "r-diagonal"
+  },
+  {
+   "src": "/media/FALTA/668f8a8db8629c1f4ddc4da0ed607933",
+   "alt": {
+    "en": "The guest's social handle on the same purple stroke",
+    "pt": ""
+   },
+   "classe": "s2",
+   "mascara": "r-vertical_v2"
+  },
+  {
+   "src": "/media/FALTA/cc576b29fa53a8c16acee8453a412d16",
+   "alt": {
+    "en": "Yellow spray burst on purple above torn paper, the letters DES in cyan",
+    "pt": ""
+   },
+   "classe": "s3",
+   "mascara": "r-tira-diagonal"
+  },
+  {
+   "src": "/media/FALTA/03f85d43a40303803e7cf832f5f25ee6",
+   "alt": {
+    "en": "Purple halftone hands holding a leaf, cyan letters AÍ, orange spray on torn paper",
+    "pt": ""
+   },
+   "classe": "s4",
+   "mascara": "r-canto"
+  }
+ ],
+ "decor": {
+  "cs-h": "<span aria-hidden=\"true\" class=\"sc b b-risco_c px px2\" style=\"--ink:#FCD400;right:4%;top:84px;width:280px;height:56px;transform:rotate(6deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-risco_a px px1\" style=\"--ink: #19D3F3; left: 1135px; top: 282px; width: 255px; height: 95px; transform: rotate(36deg); position: absolute; background-color: var(--cor-case-desenrola, #4a1ba6)\"></span>",
+  "film": "<span aria-hidden=\"true\" class=\"sc b b-sublinhado_e px px5 fg\" style=\"--ink:#4A1BA6;left:6%;bottom:-36px;width:560px;height:94px\"></span>",
+  "b1": "<span aria-hidden=\"true\" class=\"sc b b-risco_a px px1\" style=\"--ink:#19D3F3;left:20px;top:200px;width:300px;height:111px;transform:rotate(-3deg)\"></span>",
+  "b1>brief-img": "<span aria-hidden=\"true\" class=\"sc b b-circulo_c px px4 fg\" style=\"--ink:#4A1BA6;right:6%;top:40%;width:420px;height:161px;transform:rotate(-6deg)\"></span>",
+  "b2": "<span aria-hidden=\"true\" class=\"sc b b-mancha_a px px3\" style=\"--ink:#FF7A1A;left:-40px;top:420px;width:150px;height:131px\"></span><span aria-hidden=\"true\" class=\"sc b b-diagonal_a px px2 fg\" style=\"--ink:#FCD400;right:3%;top:900px;width:160px;height:86px\"></span>",
+  "b3": "<span aria-hidden=\"true\" class=\"sc b b-circulo_e px px2\" style=\"--ink:#4A1BA6;left:150px;top:150px;width:320px;height:117px;transform:rotate(-4deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-vertical_a px px4 fg\" style=\"--ink:#19D3F3;right:5%;top:760px;width:46px;height:129px;transform:rotate(10deg)\"></span>",
+  "nx": "<span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#19D3F3;left:38%;top:110px;width:120px;height:118px\"></span>",
+  "footer": "<span aria-hidden=\"true\" class=\"sc b b-sublinhado_c px px1\" style=\"--ink:#1BE07D;top:-22px;left:6%;width:40%;height:44px;transform:rotate(-1deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#F0387A;right:7%;top:40px;width:64px;height:63px\"></span>"
+ },
+ "seo": {
+  "titulo": {
+   "en": "Desenrola aí — Collage Podcast Graphics | Igor Romana",
+   "pt": "Desenrola aí — Pacote Gráfico em Colagem | Igor Romana"
+  },
+  "descricao": {
+   "en": "Collage opening, lower thirds and transitions for a YouTube podcast, all animated from one cut-out library on a short deadline.",
+   "pt": ""
+  }
+ },
+ "cor_titulo": "#B9A4FF",
+ "brief_img": {
+  "src": "/media/FALTA/6e748f0e3055b41b329ff3316d506ea5",
+  "alt": {
+   "en": "Desenrola aí logo in purple stencil type on torn paper, with orange spray and hanging sneakers",
+   "pt": ""
+  },
+  "classe": "brief",
+  "mascara": "r-horizontal"
+ },
+ "resultado_legenda": {
+  "en": "Frames from the episodes on the Desenrola e Não Me Enrola channel, 2023.",
+  "pt": ""
+ }
+}

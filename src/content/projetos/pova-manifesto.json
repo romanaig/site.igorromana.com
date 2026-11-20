@@ -1,0 +1,233 @@
+{
+ "id": "pova-manifesto",
+ "slug": {
+  "en": "pova-manifesto",
+  "pt": "pova-manifesto"
+ },
+ "status": "rascunho",
+ "exibir_no_portfolio": true,
+ "destaque": true,
+ "ordem": 3,
+ "ano": "2026",
+ "cor": "#1BE07D",
+ "cor_texto": "#1B1A18",
+ "cliente": "POVA",
+ "agencia": "Cappuccino",
+ "ficha": {
+  "cliente_rotulo": {
+   "en": "Client",
+   "pt": ""
+  },
+  "cliente_sub": {
+   "en": "Pitch for the Brazil launch",
+   "pt": ""
+  },
+  "meio": [
+   {
+    "rotulo": {
+     "en": "Agency",
+     "pt": ""
+    },
+    "valor": {
+     "en": "Cappuccino",
+     "pt": ""
+    }
+   },
+   {
+    "rotulo": {
+     "en": "Team",
+     "pt": ""
+    },
+    "valor": {
+     "en": "Creative direction by Camila Teshima and Diego Araujo Torres, art direction by Cristhian Fonteles",
+     "pt": ""
+    }
+   }
+  ]
+ },
+ "etiqueta": "Pitch · unaired",
+ "titulo": {
+  "en": "POVA Manifesto",
+  "pt": ""
+ },
+ "nome_card": {
+  "en": "POVA Manifesto",
+  "pt": ""
+ },
+ "resumo": {
+  "en": "A pitch manifesto for POVA's phone launch in Brazil, built around the country coming together for the 2026 World Cup.",
+  "pt": ""
+ },
+ "papel": {
+  "en": "Animation & edit",
+  "pt": ""
+ },
+ "duracao": {
+  "en": "1 week",
+  "pt": ""
+ },
+ "blocos": {
+  "desafio": {
+   "en": "POVA, Tecno's phone line, was launching in Brazil in time for the 2026 World Cup, and Cappuccino was pitching for the launch. The manifesto had to sell two things at once: the campaign's big idea, a whole people coming together around the Cup, and its tone.\n\nThe material was stock footage, the kind anyone can license, plus a few AI-generated images, and there was about a week to finish. The job was to make generic images feel like they could only belong to POVA.",
+   "pt": ""
+  },
+  "processo": {
+   "en": "I treated the stock as raw material, not as the film. First the grade: every shot pulled into POVA's palette, so clips from different sources read as one world. On top, a layer of tech effects to give the images the brand's texture. The manifesto text moves on screen as animated type, so the idea is there to read, not just to hear.\n\nEven with stock and AI images in the mix, the edit stays organic: a lot of movement, people dancing, cut to the beat of the track, with a Brazilian swing for a brand arriving in the country. Creative direction by Camila Teshima and Diego Araujo Torres, art direction by Cristhian Fonteles.",
+   "pt": ""
+  },
+  "resultado": {
+   "en": "A 60-second manifesto, made in a week in 2026, that put the big idea on screen: a country united by the Cup, with the phone in every hand. The account went to another agency. The film stays here because it shows how I turn generic stock into a brand's voice on a tight deadline.",
+   "pt": ""
+  }
+ },
+ "card": {
+  "mascara": "m-d",
+  "classe": "c3",
+  "posicao": "center"
+ },
+ "loop": {
+  "src": "/media/pova-manifesto/loop.mp4",
+  "alt": {
+   "en": "Loop from the manifesto: stock footage graded and layered with tech effects",
+   "pt": ""
+  },
+  "mascara": "r-pedaco"
+ },
+ "filme": {
+  "provider": "vimeo",
+  "url": "https://vimeo.com/1248531248",
+  "rotulo": {
+   "en": "Watch the manifesto",
+   "pt": ""
+  },
+  "id": "1248531248"
+ },
+ "mix": false,
+ "proximo_mascara": "r-vertical_v2",
+ "processo": [
+  {
+   "src": "/media/FALTA/1936475dafba28224aca22814c144869",
+   "alt": {
+    "en": "Giant yellow type reading PAÍS SE UNIR over a boy dancing in a street",
+    "pt": ""
+   },
+   "classe": "q1",
+   "legenda": {
+    "en": "Manifesto type over stock",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/FALTA/3d8c718fdadb07806f82b3812108b237",
+   "alt": {
+    "en": "Two young men dancing on a viaduct railing above a downtown avenue",
+    "pt": ""
+   },
+   "classe": "q2",
+   "legenda": {
+    "en": "Stock, cut to the beat",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/FALTA/2cc2216335f5c4fbc8b41780bd910cf0",
+   "alt": {
+    "en": "A phone skimming the rings of a planet in space",
+    "pt": ""
+   },
+   "classe": "q3",
+   "estilo": "--h:300px",
+   "mascara": "r-tira",
+   "rasgado": true,
+   "legenda": {
+    "en": "Product moment",
+    "pt": ""
+   }
+  },
+  {
+   "src": "/media/FALTA/3828debfb4b8d6f7f86c571c81052e80",
+   "alt": {
+    "en": "End card: a woman holding a phone, repeated three times, beside NO PIQUE DO MEU POVA",
+    "pt": ""
+   },
+   "classe": "q4",
+   "legenda": {
+    "en": "End card",
+    "pt": ""
+   }
+  }
+ ],
+ "resultado": [
+  {
+   "src": "/media/FALTA/00c73624bfd76f5ff232d73f9d1582e3",
+   "poster": "/media/FALTA/364a4508e6d1bac43dced5496c52221f",
+   "alt": {
+    "en": "Loop: a selfie on the street, then the phone in hand with a map open",
+    "pt": ""
+   },
+   "classe": "s1",
+   "mascara": "r-vertical_v3",
+   "pb": true
+  },
+  {
+   "src": "/media/FALTA/f52f5f46e1481d4ecdaeacce8666db62",
+   "alt": {
+    "en": "Fans in Brazil shirts cheering together in a crowd",
+    "pt": ""
+   },
+   "classe": "s2",
+   "mascara": "r-horizontal"
+  },
+  {
+   "src": "/media/FALTA/2cc2216335f5c4fbc8b41780bd910cf0",
+   "alt": {
+    "en": "A phone skimming the rings of a planet in space",
+    "pt": ""
+   },
+   "classe": "s3",
+   "mascara": "r-tira-diagonal"
+  },
+  {
+   "src": "/media/FALTA/3828debfb4b8d6f7f86c571c81052e80",
+   "alt": {
+    "en": "End card: a woman holding a phone, repeated three times, beside NO PIQUE DO MEU POVA",
+    "pt": ""
+   },
+   "classe": "s4",
+   "mascara": "r-diagonal"
+  }
+ ],
+ "decor": {
+  "cs-h": "<span aria-hidden=\"true\" class=\"sc b b-circulo_b px px2\" style=\"--ink:#FCD400;right:4%;top:70px;width:280px;height:86px;transform:rotate(6deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-diagonal_a px px3\" style=\"--ink:#19D3F3;right:12%;top:340px;width:160px;height:86px\"></span>",
+  "film": "<span aria-hidden=\"true\" class=\"sc b b-sublinhado_e px px5 fg\" style=\"--ink:#1BE07D;left:6%;bottom:-36px;width:560px;height:94px\"></span><span aria-hidden=\"true\" class=\"sc b b-triangulo_a px px4 fg\" style=\"--ink:#B9A4FF;right:5%;top:-34px;width:120px;height:80px;transform:rotate(-8deg)\"></span>",
+  "b1": "<span aria-hidden=\"true\" class=\"sc b b-risco_a px px1\" style=\"--ink:#FF7A1A;left:20px;top:200px;width:300px;height:111px;transform:rotate(-3deg)\"></span>",
+  "b1>brief-img": "<span aria-hidden=\"true\" class=\"sc b b-circulo_c px px4 fg\" style=\"--ink:#1BE07D;right:6%;top:40%;width:420px;height:161px;transform:rotate(-6deg)\"></span>",
+  "b2": "<span aria-hidden=\"true\" class=\"sc b b-mancha_a px px3\" style=\"--ink:#B9A4FF;left:-40px;top:420px;width:150px;height:131px\"></span><span aria-hidden=\"true\" class=\"sc b b-diagonal_a px px2 fg\" style=\"--ink:#19D3F3;right:3%;top:900px;width:160px;height:86px\"></span>",
+  "b3": "<span aria-hidden=\"true\" class=\"sc b b-circulo_e px px2\" style=\"--ink:#1BE07D;left:150px;top:150px;width:320px;height:117px;transform:rotate(-4deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-vertical_a px px4 fg\" style=\"--ink:#FF7A1A;right:5%;top:760px;width:46px;height:129px;transform:rotate(10deg)\"></span>",
+  "nx": "<span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#FF7A1A;left:38%;top:110px;width:120px;height:118px\"></span>",
+  "footer": "<span aria-hidden=\"true\" class=\"sc b b-sublinhado_c px px1\" style=\"--ink:#1BE07D;top:-22px;left:6%;width:40%;height:44px;transform:rotate(-1deg)\"></span><span aria-hidden=\"true\" class=\"sc b b-mancha_b px px3\" style=\"--ink:#F0387A;right:7%;top:40px;width:64px;height:63px\"></span>"
+ },
+ "seo": {
+  "titulo": {
+   "en": "POVA Manifesto — Edit & Motion FX | Igor Romana",
+   "pt": "Manifesto POVA — Edição e Motion FX | Igor Romana"
+  },
+  "descricao": {
+   "en": "A 60-second pitch manifesto for POVA's arrival in Brazil: stock footage graded, layered with effects, typed and cut to the beat.",
+   "pt": ""
+  }
+ },
+ "brief_img": {
+  "src": "/media/FALTA/f38104c73bbfb0204078d68c7120f945",
+  "alt": {
+   "en": "A fan in a Brazil shirt grins at a POVA phone held sideways",
+   "pt": ""
+  },
+  "classe": "brief",
+  "mascara": "r-canto"
+ },
+ "resultado_legenda": {
+  "en": "Frames from the pitch film. The loop runs in black and white; hover for color.",
+  "pt": ""
+ }
+}
