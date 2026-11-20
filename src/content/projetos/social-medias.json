@@ -11,7 +11,7 @@
  "ano": "2024–2026",
  "cor": "#FCD400",
  "cor_texto": "#1B1A18",
- "cliente": "Universal · Blowtex · SKYN · Ração Max · Hits",
+ "cliente": "Universal · Blowtex · Ração Max · Hits",
  "agencia": "Cappuccino",
  "ficha": {
   "cliente_rotulo": {
@@ -47,7 +47,7 @@
  },
  "etiqueta": "Aired",
  "titulo": {
-  "en": "Social for five brands",
+  "en": "Social for four brands",
   "pt": ""
  },
  "nome_card": {
@@ -55,7 +55,7 @@
   "pt": ""
  },
  "resumo": {
-  "en": "Feed posts, stories and TikToks for Universal, Blowtex, SKYN, Ração Max and Hits, animated and cut at Cappuccino.",
+  "en": "Feed posts, stories and TikToks for Universal, Blowtex, Ração Max and Hits, animated and cut at Cappuccino.",
   "pt": ""
  },
  "papel": {
@@ -68,7 +68,7 @@
  },
  "blocos": {
   "desafio": {
-   "en": "Social ships fast and in many formats. At Cappuccino I animated and edited pieces for five very different brands between 2024 and 2026, about a week each. Universal's Dia D needed teasers that hold a secret, and Minions & Monsters a story series with Kaká and Cafu for the 2026 World Cup.\n\nBlowtex and SKYN sell condoms, so the posts had to be bold without turning vulgar. Ração Max wanted a pet telenovela. Hits needed nail colors that read in two seconds on TikTok.",
+   "en": "Social ships fast and in many formats. At Cappuccino I animated and edited pieces for four very different brands between 2024 and 2026, about a week each. Universal's Dia D needed teasers that hold a secret, and Minions & Monsters a story series with Kaká and Cafu for the 2026 World Cup.\n\nBlowtex sells condoms, so the posts had to be bold without turning vulgar. Ração Max wanted a pet telenovela. Hits needed nail colors that read in two seconds on TikTok.",
    "pt": ""
   },
   "processo": {
@@ -89,7 +89,7 @@
   "src": "/media/social-medias/montage.mp4",
   "poster": "/media/social-medias/montage.webp",
   "alt": {
-   "en": "Montage cut between the pieces: Dia D, Minions, Blowtex, Ração Max, SKYN and Hits",
+   "en": "Montage cut between the pieces: Dia D, Minions, Blowtex, Ração Max and Hits",
    "pt": ""
   },
   "mascara": "r-vertical_v3"
@@ -118,8 +118,8 @@
  },
  "seo": {
   "titulo": {
-   "en": "Social for five brands — Animation & Edit | Igor Romana",
-   "pt": "Social para cinco marcas — Animação e Edição | Igor Romana"
+   "en": "Social for four brands — Animation & Edit | Igor Romana",
+   "pt": "Social para quatro marcas — Animação e Edição | Igor Romana"
   },
   "descricao": {
    "en": "Social at Cappuccino: a glitch teaser for Universal's Dia D, Minions & Monsters stories with Kaká, a roller-coaster spot for Blowtex.",
